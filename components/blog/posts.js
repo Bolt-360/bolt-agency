@@ -9,14 +9,16 @@ export async function getBlogPosts() {
   const data = await res.json();
   return data.data.map(post => ({
     id: post.id.toString(),
-    title: post.attributes.title,
-    date: post.attributes.date,
-    image: post.attributes.image?.data?.attributes?.url
-      ? `http://localhost:1337${post.attributes.image.data.attributes.url}`
+    title: post.title || 'Título não disponível',
+    date: post.date || new Date().toISOString().split('T')[0],
+    image: post.image?.data?.attributes?.url
+      ? `http://localhost:1337${post.image.data.attributes.url}`
       : '/assets/img/default.jpg',
-    content: post.attributes.content,
-    author: post.attributes.author,
-    categories: post.attributes.categories.split(', '),
+    content: post.content && Array.isArray(post.content)
+      ? post.content.map(item => item.children?.map(child => child.text || '').join(' ')).join(' ')
+      : 'Conteúdo não disponível',
+    author: post.author || 'Autor não disponível',
+    categories: post.categories ? post.categories.split(', ') : [],
   }));
 }
 
@@ -31,14 +33,16 @@ export async function getPostById(id) {
   const post = data.data;
   return {
     id: post.id.toString(),
-    title: post.attributes.title,
-    date: post.attributes.date,
-    image: post.attributes.image?.data?.attributes?.url
-      ? `http://localhost:1337${post.attributes.image.data.attributes.url}`
+    title: post.title || 'Título não disponível',
+    date: post.date || new Date().toISOString().split('T')[0],
+    image: post.image?.data?.attributes?.url
+      ? `http://localhost:1337${post.image.data.attributes.url}`
       : '/assets/img/default.jpg',
-    content: post.attributes.content,
-    author: post.attributes.author,
-    categories: post.attributes.categories.split(', '),
+    content: post.content && Array.isArray(post.content)
+      ? post.content.map(item => item.children?.map(child => child.text || '').join(' ')).join(' ')
+      : 'Conteúdo não disponível',
+    author: post.author || 'Autor não disponível',
+    categories: post.categories ? post.categories.split(', ') : [],
   };
 }
 
