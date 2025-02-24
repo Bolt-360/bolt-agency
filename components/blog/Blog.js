@@ -11,7 +11,7 @@ const Blog = () => {
             News &amp; Blog
           </span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-            Exploque nossas última notícias &amp; Blog
+            Explore nossas última notícias &amp; Blog
           </h2>
         </div>
         <div className="row">
