@@ -1,4 +1,4 @@
-// File: C:\Users\victo\Documents\GitHub\bolt-agency\app\layout.js
+// File: C:\Users\Antônio Junior\bolt-agency-1\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
