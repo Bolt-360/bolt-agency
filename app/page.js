@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
-import Services from "@/components/Services";
+import Services from "@/components/services/Services";
 import { TestimonialSlider4, TestimonialSlider5 } from "@/components/TestimonialSlider";
 import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";

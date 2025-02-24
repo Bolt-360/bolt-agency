@@ -44,7 +44,7 @@ const Faq = () => {
             FAQ
           </span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-            Questões Frequentes
+            Perguntas Frequentes
           </h2>
         </div>
         <div className="row justify-content-center">

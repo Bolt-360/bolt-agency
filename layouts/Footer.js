@@ -30,15 +30,15 @@ const Footer1 = () => {
         <div className="discussed-items">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+              <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
             </Link>
           </div>
           <div className="discussed-content wow fadeInUp" data-wow-delay=".5s">
             <h2>
-              Let’s Discussed About <span>Your Projects</span>
+            Vamos falar sobre <span>Seus Projetos</span>
             </h2>
             <Link href="contact" className="theme-btn hover-white">
-              Get Started <i className="far fa-arrow-right" />
+              Começe já <i className="far fa-arrow-right" />
             </Link>
           </div>
         </div>
@@ -50,11 +50,11 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>About Us</h4>
+                  <h4>Sobre nós</h4>
                 </div>
                 <div className="footer-content">
                   <p>
-                    César
+                    Bolt 360 Assessoria
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -79,20 +79,20 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Quick Link</h4>
+                  <h4>Links Rápidos</h4>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Popular Services</Link>
+                    <Link href="servicos">Serviços</Link>
                   </li>
                   <li>
-                    <Link href="team-details">Team Member</Link>
+                    <Link href="team-details">Time</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacy &amp; Setting</Link>
+                    <Link href="contact">Privacidade</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Pricing Package</Link>
+                    <Link href="pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -112,8 +112,8 @@ const Footer1 = () => {
                     </div>
                     <div className="content">
                       <p>
-                        55 Main Street, 2nd block <br />
-                        Malborne, Australia
+                        Lagoa Nova, Natal/RN <br />
+                        Brasil
                       </p>
                     </div>
                   </div>
@@ -122,8 +122,8 @@ const Footer1 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:info@example.com" className="link">
-                        info@example.com
+                      <a href="mailto:contato@bolt360.com.br" className="link">
+                        contato@bolt360.com.br
                       </a>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ const Footer1 = () => {
                     </div>
                     <div className="content">
                       <h4>
-                        <a href="tel:00012345688">+000 (123) 456 88</a>
+                        <a href="tel:00012345688">+55 (84) 3190-1700</a>
                       </h4>
                     </div>
                   </div>
@@ -146,23 +146,23 @@ const Footer1 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Recent News</h4>
+                  <h4>Notícias Recentes</h4>
                 </div>
                 <div className="recent-post-area">
                   <div className="recent-post-items">
                     <div
                       className="thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/pp1.png")',
+                        backgroundImage: 'url("/assets/img/news/pp1.png")',
                       }}
                     />
                     <div className="content">
                       <ul className="post-date">
-                        <li>Nov 25, 2024</li>
+                        <li>Fev 24, 2025</li>
                       </ul>
                       <h6>
                         <Link href="news-details">
-                          How achieve more <br /> your nine to five
+                          Como alcançar mais <br /> seu nove a cinco
                         </Link>
                       </h6>
                     </div>
@@ -171,16 +171,16 @@ const Footer1 = () => {
                     <div
                       className="thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/pp2.png")',
+                        backgroundImage: 'url("/assets/img/news/pp2.png")',
                       }}
                     />
                     <div className="content">
                       <ul className="post-date">
-                        <li>Nov 29, 2024</li>
+                        <li>Fev 24, 2025</li>
                       </ul>
                       <h6>
                         <Link href="news-details">
-                          Discover a better way of company.
+                          Descubra uma melhor forma de empresa.
                         </Link>
                       </h6>
                     </div>
@@ -198,10 +198,10 @@ const Footer1 = () => {
                   <Link href="faq">FAQs</Link>
                 </li>
                 <li>
-                  <Link href="about">Company</Link>
+                  <Link href="about">Empresa</Link>
                 </li>
                 <li>
-                  <Link href="contact">Privacy</Link>
+                  <Link href="contact">Privacidade</Link>
                 </li>
               </ul>
               <a
@@ -213,7 +213,7 @@ const Footer1 = () => {
                 <i className="far fa-angle-double-up" />
               </a>
               <p className="wow fadeInUp" data-wow-delay=".6s">
-                © <Link href="/">2024</Link> All Rights Reserved
+                © <Link href="/">2025</Link> Todos os direitos reservados
               </p>
             </div>
           </div>
@@ -236,26 +236,19 @@ const Footer2 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                  Sites & Marketing Estratégico de Alta Performance. Conquiste mais clientes e mais vendas.
                   </p>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
+                    <a href="https://www.facebook.com/bolt360assessoria">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/bolt360assessoria">
                       <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
                     </a>
                   </div>
                 </div>
@@ -384,10 +377,10 @@ const Footer2 = () => {
                 <Link href="faq">FAQs</Link>
               </li>
               <li>
-                <Link href="about">Company</Link>
+                <Link href="about">Empresa</Link>
               </li>
               <li>
-                <Link href="contact">Privacy</Link>
+                <Link href="contact">Privacidade</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -416,26 +409,25 @@ const Footer3 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                    Sites & Marketing Estratégico de Alta Performance. Conquiste mais clientes e mais vendas.
                   </p>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
+                    <a href="https://www.facebook.com/bolt360assessoria">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
+                    <a href="https://www.instagram.com/bolt360assessoria">
+                      <i className="fab fa-instagram" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-vimeo-v" />
+                    <a href="https://www.youtube.com/channel/UCO0kuOEycYARRnNfkqUdLPA">
+                      <i className="fab fa-youtube" />
                     </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p" />
+                    <a href="https://br.linkedin.com/company/bolt-360">
+                      <i className="fab fa-linkedin-in" />
                     </a>
                   </div>
                 </div>
@@ -447,20 +439,20 @@ const Footer3 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Quick Link</h4>
+                  <h4>Links Rápidos</h4>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Popular Services</Link>
+                    <Link href="servicos">Serviços</Link>
                   </li>
                   <li>
-                    <Link href="team-details">Team Member</Link>
+                    <Link href="team-details">Time Bolt</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacy &amp; Setting</Link>
+                    <Link href="contact">Privacidade &amp; Configurações</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Pricing Package</Link>
+                    <Link href="pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -480,8 +472,8 @@ const Footer3 = () => {
                     </div>
                     <div className="content">
                       <p>
-                        55 Main Street, 2nd block <br />
-                        Malborne, Australia
+                        Rua Tereza Bezerra Salustino, 1902<br />
+                        Lagoa Nova, Natal/RN, Brasil
                       </p>
                     </div>
                   </div>
@@ -490,8 +482,8 @@ const Footer3 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:info@example.com" className="link">
-                        info@example.com
+                      <a href="mailto:contato@bolt360.com.br" className="link">
+                        contato@bolt360.com.br
                       </a>
                     </div>
                   </div>
@@ -501,7 +493,7 @@ const Footer3 = () => {
                     </div>
                     <div className="content">
                       <h4>
-                        <a href="tel:00012345688">+000 (123) 456 88</a>
+                        <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Olá%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">+55 (84) 31901700</a>
                       </h4>
                     </div>
                   </div>
@@ -517,9 +509,9 @@ const Footer3 = () => {
                   <h4>Newsletter</h4>
                 </div>
                 <div className="footer-content">
-                  <p>Get more update to join Us</p>
+                  <p>Receba noticias sobre soluções Bolt 360</p>
                   <div className="footer-input">
-                    <input type="email" id="email" placeholder="Your Email" />
+                    <input type="email" id="email" placeholder="Digite seu Email" />
                     <button className="newsletter-btn" type="submit">
                       <i className="far fa-arrow-right" />
                     </button>
@@ -538,10 +530,10 @@ const Footer3 = () => {
                 <Link href="faq">FAQs</Link>
               </li>
               <li>
-                <Link href="about">Company</Link>
+                <Link href="about">Empresa</Link>
               </li>
               <li>
-                <Link href="contact">Privacy</Link>
+                <Link href="contact">Privacidade</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -561,10 +553,10 @@ const Footer4 = () => {
   return (
     <footer className="footer-section footer-bg fix">
       <div className="color-shape">
-        <img src="assets/img/footer-color-shape.png" alt="shape-img" />
+        <img src="/assets/img/footer-color-shape.png" alt="shape-img" />
       </div>
       <div className="color-shape-2">
-        <img src="assets/img/footer-color-shape-2.png" alt="shape-img" />
+        <img src="/assets/img/footer-color-shape-2.png" alt="shape-img" />
       </div>
       <div className="container">
         <div className="footer-widgets-wrapper">
@@ -576,7 +568,7 @@ const Footer4 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -673,7 +665,7 @@ const Footer4 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Newsletter</h4>
+                <h4>Newsletter</h4>
                 </div>
                 <div className="footer-content">
                   <p>Receba noticias sobre soluções Bolt 360</p>
@@ -720,24 +712,24 @@ const Footer6 = () => {
   return (
     <footer className="footer-section footer-bg">
       <div className="robot-shape float-bob-y">
-        <img src="assets/img/home-6/robot-3.png" alt="shape-img" />
+        <img src="/assets/img/home-6/robot-3.png" alt="shape-img" />
       </div>
       <div className="robot-shape-2 float-bob-y">
-        <img src="assets/img/home-6/robot-4.png" alt="shape-img" />
+        <img src="/assets/img/home-6/robot-4.png" alt="shape-img" />
       </div>
       <div className="container">
         <div className="discussed-items">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+              <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
             </Link>
           </div>
           <div className="discussed-content wow fadeInUp" data-wow-delay=".5s">
             <h2>
-              Let’s Discussed About <span>Your Projects</span>
+              Vamos Discutir Sobre <span>Seus Projetos</span>
             </h2>
             <Link href="contact" className="theme-btn hover-white">
-              Get Started <i className="far fa-arrow-right" />
+              Começar <i className="far fa-arrow-right" />
             </Link>
           </div>
         </div>
@@ -749,12 +741,11 @@ const Footer6 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>About Us</h4>
+                  <h4>Quem Somos</h4>
                 </div>
                 <div className="footer-content">
                   <p>
-                    Sed perspiciatis unde omnis natus doloremque laudantium
-                    totae
+                    Somos uma empresa de marketing digital que oferece soluções para impulsionar seu negócio.
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -779,20 +770,20 @@ const Footer6 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Quick Link</h4>
+                  <h4>Links Rápidos</h4>
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Popular Services</Link>
+                    <Link href="servicos">Serviços</Link>
                   </li>
                   <li>
-                    <Link href="team-details">Team Member</Link>
+                    <Link href="team-details">Time</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacy &amp; Setting</Link>
+                    <Link href="contact">Privacidade</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Pricing Package</Link>
+                    <Link href="pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -803,7 +794,7 @@ const Footer6 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Get In Touch</h4>
+                  <h4>Fale Conosco</h4>
                 </div>
                 <div className="contact-info-area">
                   <div className="contact-items">
@@ -812,8 +803,8 @@ const Footer6 = () => {
                     </div>
                     <div className="content">
                       <p>
-                        55 Main Street, 2nd block <br />
-                        Malborne, Australia
+                        Rua Tereza Bezerra Salustino, 1902<br />
+                        Lagoa Nova, Natal/RN, Brasil
                       </p>
                     </div>
                   </div>
@@ -822,8 +813,8 @@ const Footer6 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:info@example.com" className="link">
-                        info@example.com
+                      <a href="mailto:contato@bolt360.com.br" className="link">
+                        contato@bolt360.com.br
                       </a>
                     </div>
                   </div>
@@ -833,7 +824,7 @@ const Footer6 = () => {
                     </div>
                     <div className="content">
                       <h4>
-                        <a href="tel:00012345688">+000 (123) 456 88</a>
+                        <a href="tel:00012345688">+55 (84) 31901700</a>
                       </h4>
                     </div>
                   </div>
@@ -846,14 +837,14 @@ const Footer6 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Recent News</h4>
+                  <h4>Notícias Recentes</h4>
                 </div>
                 <div className="recent-post-area">
                   <div className="recent-post-items">
                     <div
                       className="thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/pp1.png")',
+                        backgroundImage: 'url("/assets/img/news/pp1.png")',
                       }}
                     />
                     <div className="content">
@@ -862,7 +853,7 @@ const Footer6 = () => {
                       </ul>
                       <h6>
                         <Link href="news-details">
-                          How achieve more <br /> your nine to five
+                          Como alcançar mais <br /> seu nove a cinco
                         </Link>
                       </h6>
                     </div>
@@ -871,7 +862,7 @@ const Footer6 = () => {
                     <div
                       className="thumb bg-cover"
                       style={{
-                        backgroundImage: 'url("assets/img/news/pp2.png")',
+                        backgroundImage: 'url("/assets/img/news/pp2.png")',
                       }}
                     />
                     <div className="content">
@@ -880,7 +871,7 @@ const Footer6 = () => {
                       </ul>
                       <h6>
                         <Link href="news-details">
-                          Discover a better way of company.
+                          Descubra uma melhor forma de empresa.
                         </Link>
                       </h6>
                     </div>
@@ -898,10 +889,10 @@ const Footer6 = () => {
                   <Link href="faq">FAQs</Link>
                 </li>
                 <li>
-                  <Link href="about">Company</Link>
+                  <Link href="about">Quem Somos</Link>
                 </li>
                 <li>
-                  <Link href="contact">Privacy</Link>
+                  <Link href="contact">Privacidade</Link>
                 </li>
               </ul>
               <a
