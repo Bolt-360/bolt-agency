@@ -15,7 +15,7 @@ const Faq = () => {
     },
     {
       id: 'faq2',
-      question: '2. Qual a diferença entre um site comum e um site otimizado para SEO?',
+      question: 'Qual a diferença entre um site comum e um site otimizado para SEO?',
       answer: 'Um site comum pode ter um bom design, mas sem otimização SEO, ele dificilmente aparecerá no Google. Nossos sites são criados com técnicas avançadas de SEO, copywriting estratégico e estrutura ideal para ranqueamento, garantindo mais visibilidade e clientes para sua empresa.'
     },
     {
