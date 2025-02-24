@@ -1,3 +1,4 @@
+"use client"
 import Pricing from "@/components/bakPricing";
 import Faq from "@/components/Faq";
 import Services from "@/components/Services";

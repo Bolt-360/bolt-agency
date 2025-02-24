@@ -14,8 +14,11 @@ import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 import Blog from '@/components/blog/Blog';
+import { getBlogPosts } from './api/posts'; // Importe do novo local server-side
 
-const page = () => {
+const Page = async () => {
+  const posts = await getBlogPosts();
+
   const [isOpen, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAccepted, setIsAccepted] = useState(false);
@@ -29,7 +32,6 @@ const page = () => {
   };
 
   const validatePhone = (phone) => {
-    // Accepts formats like: (84)99999-9999 or 84999999999
     const regex = /^(?:\(?([0-9]{2})\)?[-. ]?)?([0-9]{5})[-. ]?([0-9]{4})$/;
     return regex.test(phone.replace(/\D/g, ''));
   };
@@ -101,7 +103,6 @@ const page = () => {
         rtl={false}
       />
 
-      {/* Componente ModalVideo */}
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
@@ -109,7 +110,6 @@ const page = () => {
         onClose={() => setOpen(false)}
       />
 
-      {/* Hero Section Start */}
       <section
         className="hero-section hero-1 bg-cover fix"
         style={{ backgroundImage: 'url("assets/img/hero/01.jpg")' }}
@@ -209,7 +209,7 @@ const page = () => {
                         />
                         <p>
                           Li e concordo com{" "}
-                          <Link href="/terms" target="_blank" rel="noopener noreferrer">Termos &amp; Condições</Link>
+                          <Link href="/terms" target="_blank" rel="noopener noreferrer">Termos & Condições</Link>
                         </p>
                       </div>
                     </div>
@@ -230,7 +230,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* About Section Start */}
       <section className="about-section fix section-padding" id="about">
         <div className="container">
           <div className="about-wrapper">
@@ -251,7 +250,7 @@ const page = () => {
                       Quem Somos
                     </span>
                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                      Experiência de +20 Anos em Gestão Empresarial &amp; Data Science
+                      Experiência de +20 Anos em Gestão Empresarial & Data Science
                     </h2>
                   </div>
                   <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
@@ -263,7 +262,7 @@ const page = () => {
                   >
                     <li>
                       <i className="fas fa-check-circle" />
-                      Marketing Estratégico &amp; Copywriting para SEO
+                      Marketing Estratégico & Copywriting para SEO
                     </li>
                     <li>
                       <i className="fas fa-check-circle" />
@@ -290,7 +289,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* Cta Video Section Start */}
       <div
         className="cta-video-section fix bg-cover"
         style={{ backgroundImage: 'url("assets/img/cta/cta-video.jpg")' }}
@@ -351,9 +349,7 @@ const page = () => {
       </div>
 
       <Services />
-      {/* Working Process Section Start */}
       <WorkingProcess />
-      {/* Testimonial Section Start */}
       <section
         className="testimonial-section-4 fix section-padding"
         id="testimonial"
@@ -373,13 +369,9 @@ const page = () => {
         <TestimonialSlider4 />
         <TestimonialSlider5 />
       </section>
-      {/* Faq Section Start */}
       <Faq />
-      {/* Pricing Section Start */}
       <Pricing />
-      {/* News Section Start */}
-      <Blog />
-      {/* Contact Section Start */}
+      <Blog posts={posts} />
       <section className="contact-section fix section-padding pt-0 fix">
         <div className="pattern-shape">
           <img src="assets/img/box-pattern.png" alt="radius-shape" />
@@ -426,4 +418,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
