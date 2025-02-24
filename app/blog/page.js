@@ -1,4 +1,3 @@
-// /app/blog/page.js
 import Link from 'next/link';
 import { getBlogPosts } from '@/data/posts';
 

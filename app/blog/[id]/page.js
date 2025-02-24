@@ -1,4 +1,3 @@
-// /app/blog/[id]/page.js
 import Link from 'next/link';
 import { getPostById, getAllPostIds } from '@/data/posts';
 import { notFound } from 'next/navigation';

@@ -14,10 +14,10 @@ import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 import Blog from '@/components/blog/Blog';
-import { getBlogPosts } from './api/posts'; // Importe do novo local server-side
+import { getBlogPosts } from './api/posts';
 
-const Page = async () => {
-  const posts = await getBlogPosts();
+const Page = () => {
+  const posts = getBlogPosts();
 
   const [isOpen, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -128,7 +128,9 @@ const Page = async () => {
                 </h1>
                 <div className="hero-button">
                   <Link
-                    href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer"
+                    href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="theme-btn hover-white wow fadeInUp"
                     data-wow-delay=".4s"
                   >

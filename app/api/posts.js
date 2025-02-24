@@ -1,9 +1,8 @@
-// app/api/posts.js
 export async function getBlogPosts() {
     try {
       const res = await fetch('http://localhost:1337/api/posts?populate=*', {
         headers: {
-          // Authorization: `Bearer SEU_TOKEN_API`, 
+          // Authorization: `Bearer SEU_TOKEN_API`,
         },
         cache: 'force-cache', // Para SSR ou ISR (opcional)
       });
@@ -16,7 +15,7 @@ export async function getBlogPosts() {
   
       if (!data.data || !Array.isArray(data.data)) {
         console.warn('Nenhum post encontrado ou resposta inválida:', data);
-        return []; 
+        return [];
       }
   
       return data.data.map(post => {
@@ -32,7 +31,7 @@ export async function getBlogPosts() {
           title: post.title || 'Título não disponível', // Fallback
           date: post.date || new Date().toISOString().split('T')[0], // Fallback
           image: post.image?.url
-            ? `http://localhost:1337${post.image.url}` // Ajuste para o novo formato da URL
+            ? `http://localhost:1337${post.image.url}`
             : '/assets/img/default.jpg',
           content: contentText, // Texto do Rich Text
           author: post.author || 'Autor não disponível', // Fallback
@@ -41,6 +40,6 @@ export async function getBlogPosts() {
       });
     } catch (error) {
       console.error('Erro ao buscar posts:', error);
-      return []; 
+      return [];
     }
   }
