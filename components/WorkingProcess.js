@@ -22,8 +22,8 @@ const WorkingProcess = () => {
                 <span className="sub-title">Passo 01</span>
                 <h3>Diagnóstico &amp; Planejamento</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error <br />{" "}
-                  voluptatem accusantium
+                Entendemos as necessidades do seu negócio  <br />{" "}
+                e definimos os objetivos do site.
                 </p>
               </div>
             </div>
@@ -47,8 +47,8 @@ const WorkingProcess = () => {
                 <span className="sub-title">Passo 02</span>
                 <h3>Design e Desenvolvimento</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error <br />{" "}
-                  voluptatem accusantium
+                Criamos o layout e desenvolvemos o site <br />{" "}
+                com foco em usabilidade e conversão.
                 </p>
               </div>
               <div className="icon">
@@ -65,8 +65,8 @@ const WorkingProcess = () => {
                 <span className="sub-title">Passo 03</span>
                 <h3>Execução &amp; Estratégica</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error <br />{" "}
-                  voluptatem accusantium
+                  Criamos um copywriting exclusivo e pensado <br />{" "}
+                  para a captação e conversão de clientes.
                 </p>
               </div>
             </div>
@@ -90,8 +90,8 @@ const WorkingProcess = () => {
                 <span className="sub-title">Passo 04</span>
                 <h3>Otimização: Conseguir 3x + Resultados</h3>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error <br />{" "}
-                  voluptatem accusantium
+                  Otimizamos o site para garantir carregamento rápido, <br />{" "}
+                  SEO e uma experiência impecável para o usuário.
                 </p>
               </div>
               <div className="icon">
