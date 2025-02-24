@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Blog = ({ posts }) => {
   if (!posts || !Array.isArray(posts)) {
-    return <div>Carregando...</div>; // Fallback
+    return <div>Carregando posts...</div>; // Fallback
   }
 
   return (
