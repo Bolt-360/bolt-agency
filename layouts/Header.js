@@ -28,11 +28,11 @@ const Menu = ({ single, menu }) => {
   const singleMenu = menu
     ? menu
     : [
-        { id: 1, href: "about", title: "Quem Somos" },
-        { id: 2, href: "services", title: "Serviços" },
-        { id: 3, href: "team", title: "Time" },
-        { id: 4, href: "blog", title: "Blog" },
-      ];
+      { id: 1, href: "about", title: "Quem Somos" },
+      { id: 2, href: "services", title: "Serviços" },
+      { id: 3, href: "team", title: "Time" },
+      { id: 4, href: "blog", title: "Blog" },
+    ];
   return (
     <Fragment>
       {single ? (
@@ -150,21 +150,21 @@ const MobileMenu = ({ single, menu }) => {
   const [activeMenu, setActiveMenu] = useState("");
   const [multiMenu, setMultiMenu] = useState("");
   const activeMenuSet = (value) =>
-      setActiveMenu(activeMenu === value ? "" : value),
+    setActiveMenu(activeMenu === value ? "" : value),
     activeLi = (value) =>
       value === activeMenu ? { display: "block" } : { display: "none" };
   const multiMenuSet = (value) =>
-      setMultiMenu(multiMenu === value ? "" : value),
+    setMultiMenu(multiMenu === value ? "" : value),
     multiMenuActiveLi = (value) =>
       value === multiMenu ? { display: "block" } : { display: "none" };
   const singleMenu = menu
     ? menu
     : [
-        { id: 1, href: "about", title: "About" },
-        { id: 2, href: "services", title: "Services" },
-        { id: 3, href: "team", title: "Team" },
-        { id: 4, href: "blog", title: "Blog" },
-      ];
+      { id: 1, href: "about", title: "About" },
+      { id: 2, href: "services", title: "Services" },
+      { id: 3, href: "team", title: "Team" },
+      { id: 4, href: "blog", title: "Blog" },
+    ];
   return (
     <div className="mobile-menu fix mb-3 mean-container d-block d-xl-none">
       <div className="mean-bar">
@@ -345,8 +345,8 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                 <MobileMenu single={single} menu={menu} />
               </div>
               <p className="text d-none d-xl-block mb-5">
-              Experiência de +20 Anos em Gestão Empresarial & Data Science
-              Nossa experiência no mercado corporativo nos permite desenvolver estratégias digitais personalizadas
+                Experiência de +20 Anos em Gestão Empresarial & Data Science
+                Nossa experiência no mercado corporativo nos permite desenvolver estratégias digitais personalizadas
               </p>
               <div className="offcanvas__contact">
                 <h4>Fale Conosco</h4>
@@ -453,13 +453,13 @@ const Header1 = ({ single, menu }) => {
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="icon-items">
-                  <div className="icon">
+                  <div className="icon white-color">
                     <i className="fas fa-phone-alt" />
                   </div>
                   <div className="content">
                     <p>Fale Conosco</p>
                     <h4>
-                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency">+55(84)31901700</a>
+                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">+55(84)31901700</a>
                     </h4>
                   </div>
                 </div>

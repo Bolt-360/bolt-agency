@@ -44,7 +44,7 @@ const page = () => {
                 </h1>
                 <div className="hero-button">
                   <Link
-                    href="/"
+                    href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer"
                     className="theme-btn hover-white wow fadeInUp"
                     data-wow-delay=".4s"
                   >
@@ -137,7 +137,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      
+
       {/* About Section Start */}
       <section className="about-section fix section-padding" id="about">
         <div className="container">
@@ -179,7 +179,7 @@ const page = () => {
                     </li>
                     <li>
                       <i className="fas fa-check-circle" />
-                      Tráfego Qualificado e Conversões Reais 
+                      Tráfego Qualificado e Conversões Reais
                     </li>
                   </ul>
                   <div
