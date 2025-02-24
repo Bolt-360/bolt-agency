@@ -54,7 +54,7 @@ const Footer1 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                        César
+                    César
                   </p>
                   <div className="social-icon d-flex align-items-center">
                     <a href="#">
@@ -581,19 +581,19 @@ const Footer4 = () => {
                 </div>
                 <div className="footer-content">
                   <p>
-                  Sites & Marketing Estratégico de Alta Performance. Conquiste mais clientes e mais vendas.
+                    Sites & Marketing Estratégico de Alta Performance. Conquiste mais clientes e mais vendas.
                   </p>
                   <div className="social-icon d-flex align-items-center">
-                    <a href="#">
+                    <a href="https://www.facebook.com/bolt360assessoria" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/bolt360assessoria" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-instagram" />
                     </a>
-                    <a href="#">
+                    <a href="https://www.youtube.com/channel/UCO0kuOEycYARRnNfkqUdLPA" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-youtube" />
                     </a>
-                    <a href="#">
+                    <a href="https://br.linkedin.com/company/bolt-360" target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-linkedin-in" />
                     </a>
                   </div>
@@ -639,8 +639,8 @@ const Footer4 = () => {
                     </div>
                     <div className="content">
                       <p>
-                      Rua Tereza Bezerra Salustino, 1902<br />
-                      Lagoa Nova, Natal/RN, Brasil
+                        Rua Tereza Bezerra Salustino, 1902<br />
+                        Lagoa Nova, Natal/RN, Brasil
                       </p>
                     </div>
                   </div>
