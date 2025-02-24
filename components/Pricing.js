@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const Pricing = () => {
+  const whatsappBolt = "https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency";
   const plans = [
     {
       name: "Essencial",
@@ -8,14 +9,14 @@ const Pricing = () => {
       setupCost: "Setup",
       monthlyCost: "R$790,",
       features: [
-        "✔️ 5 páginas otimizadas",
-        "✔️ Básico Copywriting Estratégico",
-        "✔️ Inicial SEO On-Page e Técnica",
+        "✔️ 5 Páginas Otimizadas",
+        "✔️ Copywriting Estratégico Básico",
+        "✔️ SEO On-Page e Técnica Inicial",
         "❌ Gestão de Redes Sociais",
-        "✔️ Simples Planejamento de Marketing e Linha Editorial",
+        "✔️ Planejamento de Marketing e Linha Editorial Simples",
         "❌ Blog com SEO e Copywriting",
         "❌ Funis de Vendas Automatizados",
-        "✔️ Simples Relatórios e Melhorias Contínuas",
+        "✔️ Relatórios e Melhorias Contínuas Simples",
       ],
       delay: ".3s",
     },
@@ -25,14 +26,14 @@ const Pricing = () => {
       setupCost: "Setup",
       monthlyCost: "R$1.290,",
       features: [
-        "✔️ 10 páginas + SEO avançado",
-        "✔️ Profissional Copywriting Estratégico",
-        "✔️ Avançado SEO On-Page e Técnica",
-        "✔️ 2 redes sociais Gestão de Redes Sociais",
-        "✔️ Avançado Planejamento de Marketing e Linha Editorial",
-        "✔️ 4 artigos/mês Blog com SEO e Copywriting",
-        "✔️ Básico Funis de Vendas Automatizados",
-        "✔️ Mensais Relatórios e Melhorias Contínuas",
+        "✔️ 10 Páginas + SEO Avançado",
+        "✔️ Copywriting Estratégico Profissional",
+        "✔️ SEO On-Page e Técnica Avançado",
+        "✔️ Gestão de Redes Sociais (2)",
+        "✔️ Planejamento de Marketing e Linha Editorial Avançado",
+        "✔️ Blog com SEO e Copywriting, 4 artigos/mês",
+        "✔️ Funis de Vendas Automatizados Básico",
+        "✔️ Relatórios e Melhorias Contínuas Mensais",
       ],
       delay: ".5s",
     },
@@ -42,14 +43,14 @@ const Pricing = () => {
       setupCost: "Setup",
       monthlyCost: "R$1.990,",
       features: [
-        "✔️ 15+ páginas + estratégia completa",
-        "✔️ Premium e persuasivo Copywriting Estratégico",
-        "✔️ Full SEO otimizado SEO On-Page e Técnica",
-        "✔️ 3 redes sociais Gestão de Redes Sociais",
-        "✔️ Completo e personalizado Planejamento de Marketing e Linha Editorial",
-        "✔️ 8 artigos/mês Blog com SEO e Copywriting",
-        "✔️ Completo Funis de Vendas Automatizados",
-        "✔️ Semanais e estratégicos Relatórios e Melhorias Contínuas",
+        "✔️ 15+ Páginas + Estratégia Completa",
+        "✔️ Copywriting Estratégico Premium e Persuasivo",
+        "✔️ SEO Otimizado SEO On-Page e Técnica Full",
+        "✔️ Gestão de Redes Sociais (3)",
+        "✔️ Planejamento de Marketing e Linha Editorial Completo e Personalizado",
+        "✔️ Blog com SEO e Copywriting, 8 artigos/mês",
+        "✔️ Funis de Vendas Automatizados Completo",
+        "✔️ Relatórios e Melhorias Contínuas Semanais e Estratégicos",
       ],
       delay: ".7s",
     },
@@ -97,7 +98,7 @@ const Pricing = () => {
                   </h2>
                 </div>
                 <div className="pricing-button">
-                  <Link href="contact" className="theme-btn style-transparent">
+                  <Link href={whatsappBolt} target="_blank" className="theme-btn style-transparent">
                     Escolher Plano
                   </Link>
                 </div>
