@@ -19,7 +19,7 @@ const page = () => {
                   data-wow-delay=".5s"
                 >
                   <span>
-                    Back To Home
+                    Voltar para o Início
                     <i className="fas fa-chevron-right" />
                   </span>
                 </Link>
