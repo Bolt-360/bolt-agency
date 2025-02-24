@@ -389,21 +389,21 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                   </li>
                 </ul>
                 <div className="header-button mt-4">
-                  <Link href="contact" className="theme-btn text-center">
+                  <Link href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" className="theme-btn text-center">
                     Fale Conosco
                   </Link>
                 </div>
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.facebook.com/bolt360assessoria" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook-f" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/bolt360assessoria/" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCO0kuOEycYARRnNfkqUdLPA" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-youtube" />
                   </a>
-                  <a href="#">
+                  <a href="https://br.linkedin.com/company/bolt-360" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>
