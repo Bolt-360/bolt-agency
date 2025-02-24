@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
@@ -14,9 +16,90 @@ import Link from "next/link";
 
 const page = () => {
   const [isOpen, setOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isAccepted, setIsAccepted] = useState(false);
+  const [isNome, setIsNome] = useState(false);
+  const [isEmail, setIsEmail] = useState(false);
+  const [isPhone, setIsPhone] = useState(false);
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const validatePhone = (phone) => {
+    // Accepts formats like: (84)99999-9999 or 84999999999
+    const regex = /^(?:\(?([0-9]{2})\)?[-. ]?)?([0-9]{5})[-. ]?([0-9]{4})$/;
+    return regex.test(phone.replace(/\D/g, ''));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    
+    if (!isAccepted) {
+      toast.error('Por favor, aceite os termos e condições para continuar.');
+      return;
+    } 
+    
+    if (!isNome || !isEmail || !isPhone) {
+      toast.error('Por favor, preencha todos os campos para continuar.');
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      toast.error('Por favor, insira um email válido.');
+      return;
+    }
+
+    if (!validatePhone(phone)) {
+      toast.error('Por favor, insira um telefone válido.');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const formData = {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+      };
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success('Mensagem enviada com sucesso!');
+        e.target.reset();
+      } else {
+        toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
+      }
+    } catch (error) {
+      toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <NextLayout header={1} footer={4} single>
+      <ToastContainer 
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+      />
+
       {/* Componente ModalVideo */}
       <ModalVideo
         channel="youtube"
@@ -51,7 +134,7 @@ const page = () => {
                     Fale Conosco Agora <i className="far fa-arrow-right" />
                   </Link>
                   <Link
-                    href="service"
+                    href="service-details"
                     className="btn-link wow fadeInUp"
                     data-wow-delay=".6s"
                   >
@@ -75,9 +158,8 @@ const page = () => {
                 <h4>Faça um Diagnóstico Gratuito</h4>
                 <p></p>
                 <form
-                  action="#"
+                  onSubmit={handleSubmit}
                   id="contact-form"
-                  method="POST"
                   className="contact-form-item"
                 >
                   <div className="row g-4">
@@ -88,6 +170,7 @@ const page = () => {
                           name="name"
                           id="name"
                           placeholder="Seu Nome"
+                          onChange={(e) => setIsNome(e.target.value.trim() !== '')}
                         />
                       </div>
                     </div>
@@ -98,6 +181,7 @@ const page = () => {
                           name="email"
                           id="email"
                           placeholder="Email"
+                          onChange={(e) => setIsEmail(e.target.value.trim() !== '')}
                         />
                       </div>
                     </div>
@@ -108,6 +192,7 @@ const page = () => {
                           name="phone"
                           id="phone"
                           placeholder="Telefone"
+                          onChange={(e) => setIsPhone(e.target.value.trim() !== '')}
                         />
                       </div>
                     </div>
@@ -118,6 +203,8 @@ const page = () => {
                           className="form-check-input"
                           name="save-for-next"
                           id="saveForNext"
+                          checked={isAccepted}
+                          onChange={(e) => setIsAccepted(e.target.checked)}
                         />
                         <p>
                           Li e concordo com{" "}
@@ -126,8 +213,12 @@ const page = () => {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <button type="submit" className="theme-btn">
-                        Agende Agora <i className="far fa-arrow-right" />
+                      <button 
+                        type="submit" 
+                        className={`theme-btn`}
+                      >
+                        {isSubmitting ? 'Enviando...' : 'Agende Agora'} 
+                        <i className="far fa-arrow-right" />
                       </button>
                     </div>
                   </div>
