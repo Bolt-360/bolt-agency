@@ -1,0 +1,47 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+      
+      - name: Limpar diretório de build
+        run: rm -rf out/
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Build do projeto
+        run: npm run build
+
+      - name: Verificar arquivos gerados
+        run: ls -lhR out/
+
+      - name: Upload dos arquivos para GitHub Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: out
+
+      - name: Deploy no GitHub Pages
+        uses: actions/deploy-pages@v4
