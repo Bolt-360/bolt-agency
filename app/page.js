@@ -119,8 +119,8 @@ const page = () => {
             <div className="col-lg-6">
               <div className="hero-content">
                 <span className="sub-content wow fadeInUp" data-wow-delay=".2s">
-                  <img src="assets/img/bale.png" alt="img" />
-                  25+ Anos de Experiência
+                  <img src="assets/img/balewhite.png" alt="img" />
+                   25+ Anos de Experiência
                 </span>
                 <h1 className="wow fadeInUp" data-wow-delay=".2s">
                   O Marketing Digital <br />

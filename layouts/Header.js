@@ -72,7 +72,7 @@ const Menu = ({ single, menu }) => {
             {!isTermsPage && (
               <>
                 <li>
-                  <Link href="service-details">
+                  <Link href="servicos">
                     Serviços
                     <i className="fas fa-angle-down" />
                   </Link>
@@ -81,7 +81,7 @@ const Menu = ({ single, menu }) => {
                       <Link href="service">Serviços</Link>
                     </li>
                     <li>
-                      <Link href="service-details">Serviços</Link>
+                      <Link href="servicos">Serviços</Link>
                     </li>
                   </ul>
                 </li>
@@ -222,7 +222,7 @@ const MobileMenu = ({ single, menu }) => {
                       <Link href="service">Serviços</Link>
                     </li>
                     <li>
-                      <Link href="service-details">Serviços Detalhados</Link>
+                      <Link href="servicos">Serviços Detalhados</Link>
                     </li>
                   </ul>
                   <a

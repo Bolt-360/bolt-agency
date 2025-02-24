@@ -83,7 +83,7 @@ const Footer1 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Popular Services</Link>
+                    <Link href="servicos">Popular Services</Link>
                   </li>
                   <li>
                     <Link href="team-details">Team Member</Link>
@@ -271,7 +271,7 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Popular Services</Link>
+                    <Link href="servicos">Popular Services</Link>
                   </li>
                   <li>
                     <Link href="team-details">Team Member</Link>
@@ -338,7 +338,7 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Terms &amp; Conditions</Link>
+                    <Link href="servicos">Terms &amp; Conditions</Link>
                   </li>
                   <li>
                     <Link href="contact">Privacy Policy</Link>
@@ -362,13 +362,13 @@ const Footer2 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Web Template Design</Link>
+                    <Link href="servicos">Web Template Design</Link>
                   </li>
                   <li>
-                    <Link href="service-details">Mobile Application</Link>
+                    <Link href="servicos">Mobile Application</Link>
                   </li>
                   <li>
-                    <Link href="service-details">3D Illustration</Link>
+                    <Link href="servicos">3D Illustration</Link>
                   </li>
                 </ul>
               </div>
@@ -451,7 +451,7 @@ const Footer3 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Popular Services</Link>
+                    <Link href="servicos">Popular Services</Link>
                   </li>
                   <li>
                     <Link href="team-details">Team Member</Link>
@@ -610,7 +610,7 @@ const Footer4 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Serviços</Link>
+                    <Link href="servicos">Serviços</Link>
                   </li>
                   <li>
                     <Link href="team-details">Time Bolt</Link>
@@ -783,7 +783,7 @@ const Footer6 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="service-details">Popular Services</Link>
+                    <Link href="servicos">Popular Services</Link>
                   </li>
                   <li>
                     <Link href="team-details">Team Member</Link>

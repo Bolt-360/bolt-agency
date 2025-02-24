@@ -12,7 +12,7 @@ const Services = () => {
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content bg-color-3 wow fadeInUp">
-            <img src="assets/img/bale.png" alt="img" />
+            <img src="assets/img/balewhite.png" alt="img" />
             Serviços
           </span>
           <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
@@ -33,7 +33,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">Keywords</Link>
+                  <Link href="servicos">Keywords</Link>
                 </h3>
                 <p>
                   Identificamos os termos ideais do seu público (palavras chave) e criamos a melhor estratégia para otimizar e posicionar seu site na pesquisa do Google,
@@ -52,7 +52,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">Social Media Marketing</Link>
+                  <Link href="servicos">Social Media Marketing</Link>
                 </h3>
                 <p>
                   Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos,
@@ -72,7 +72,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">Máquina de Vendas</Link>
+                  <Link href="servicos">Máquina de Vendas</Link>
                 </h3>
                 <p>
                   Automatize sua captação e conversão de clientes com funis de venda inteligentes. Sequências estratégicas de e-mails e WhatsApp, visando
@@ -91,7 +91,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">Criativos</Link>
+                  <Link href="servicos">Criativos</Link>
                 </h3>
                 <p>
                   Produção de conteúdos persuasivos com copywriting, uso de palavras-chave e frameworks de marketing, otimizando seu posicionamento digital e aumentando conversões.
@@ -109,7 +109,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">Sites e Landing Pages</Link>
+                  <Link href="servicos">Sites e Landing Pages</Link>
                 </h3>
                 <p>
                   Criamos Sites e Landing Pages otimizados, com uso de novas tecnologias, estética moderna e
@@ -128,7 +128,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="service-details">SEO</Link>
+                  <Link href="servicos">SEO</Link>
                 </h3>
                 <p>
                   Aplicação de estratégias avançadas de SEO, incluindo otimização técnica, conteúdo estratégico e pesquisa de palavras-chave,
@@ -172,13 +172,13 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
               </div>
               <div className="service-content">
                 <h3>
-                  <Link href="service-details">Keyword Research</Link>
+                  <Link href="servicos">Keyword Research</Link>
                 </h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error voluptatem
                   accusantium
                 </p>
-                <Link href="service-details" className="theme-btn bg-2">
+                <Link href="servicos" className="theme-btn bg-2">
                   Learn More <i className="far fa-arrow-right" />
                 </Link>
               </div>
@@ -194,13 +194,13 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
               </div>
               <div className="service-content">
                 <h3>
-                  <Link href="service-details">Content Writing</Link>
+                  <Link href="servicos">Content Writing</Link>
                 </h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error voluptatem
                   accusantium
                 </p>
-                <Link href="service-details" className="theme-btn bg-2">
+                <Link href="servicos" className="theme-btn bg-2">
                   Learn More <i className="far fa-arrow-right" />
                 </Link>
               </div>
@@ -216,13 +216,13 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
               </div>
               <div className="service-content">
                 <h3>
-                  <Link href="service-details">Site Optimizations</Link>
+                  <Link href="servicos">Site Optimizations</Link>
                 </h3>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error voluptatem
                   accusantium
                 </p>
-                <Link href="service-details" className="theme-btn bg-2">
+                <Link href="servicos" className="theme-btn bg-2">
                   Learn More <i className="far fa-arrow-right" />
                 </Link>
               </div>
