@@ -457,9 +457,8 @@ const Header1 = ({ single, menu }) => {
                     <i className="fas fa-phone-alt" />
                   </div>
                   <div className="content">
-                    <p>Fale Conosco</p>
                     <h4>
-                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">+55(84)31901700</a>
+                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
                     </h4>
                   </div>
                 </div>

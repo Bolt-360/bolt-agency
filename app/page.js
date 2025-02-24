@@ -13,6 +13,7 @@ import { TestimonialSlider4, TestimonialSlider5 } from "@/components/Testimonial
 import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
+import Blog from '@/components/blog/Blog';
 
 const page = () => {
   const [isOpen, setOpen] = useState(false);
@@ -377,90 +378,7 @@ const page = () => {
       {/* Pricing Section Start */}
       <Pricing />
       {/* News Section Start */}
-      <section className="news-section section-padding pt-0" id="blog">
-        <div className="container">
-          <div className="section-title text-center">
-            <span className="sub-content wow fadeInUp">
-              <img src="assets/img/bale.png" alt="img" />
-              News &amp; Blog
-            </span>
-            <h2 className="wow fadeInUp" data-wow-delay=".3s">
-              Exploque nossas última notícias &amp; Blog
-            </h2>
-          </div>
-          <div className="row">
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <div className="news-card-items style-2">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/07.jpg")' }}
-                />
-                <div className="news-content">
-                  <p>Novembro 25, 2024</p>
-                  <h4>
-                    <Link href="news-details">
-                      O impacto do IA no ranqueamento de Sites
-                    </Link>
-                  </h4>
-                  <Link className="link-btn" href="news-details">
-                    Ler Mais
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".5s"
-            >
-              <div className="news-card-items style-2">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/08.jpg")' }}
-                />
-                <div className="news-content">
-                  <p>November 25, 2024</p>
-                  <h4>
-                    <Link href="news-details">
-                      Como a velocidade de seu site impacta no comportamento do seu consumidor
-                    </Link>
-                  </h4>
-                  <Link className="link-btn" href="news-details">
-                    Ler Mais
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-              data-wow-delay=".7s"
-            >
-              <div className="news-card-items style-2">
-                <div
-                  className="news-image bg-cover"
-                  style={{ backgroundImage: 'url("assets/img/news/09.jpg")' }}
-                />
-                <div className="news-content">
-                  <p>November 25, 2024</p>
-                  <h4>
-                    <Link href="news-details">
-                      Tecnologias Revolucionárias para 2025
-                    </Link>
-                  </h4>
-                  <Link className="link-btn" href="news-details">
-                    Ler Mais
-                    <i className="far fa-arrow-right" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Blog />
       {/* Contact Section Start */}
       <section className="contact-section fix section-padding pt-0 fix">
         <div className="pattern-shape">
