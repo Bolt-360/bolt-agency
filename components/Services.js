@@ -16,8 +16,8 @@ const Services = () => {
             Serviços
           </span>
           <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-          🚀 Do Posicionamento ao Crescimento!
-           <br />
+            🚀 Do Posicionamento ao Crescimento!
+            <br />
           </h2>
           <h3 className="text-white wow fadeInUp" data-wow-delay=".3s"> Tudo o Que Sua Empresa Precisa para Vencer no Digital
           </h3>
@@ -36,8 +36,8 @@ const Services = () => {
                   <Link href="service-details">Keywords</Link>
                 </h3>
                 <p>
-                Identificamos os termos ideais do seu público (palavras chave) e criamos a melhor estratégia para otimizar e posicionar seu site na pesquisa do Google, 
-            usando elas em posts nas redes sociais, blog etc 
+                  Identificamos os termos ideais do seu público (palavras chave) e criamos a melhor estratégia para otimizar e posicionar seu site na pesquisa do Google,
+                  usando elas em posts nas redes sociais, blog etc
                 </p>
               </div>
             </div>
@@ -55,9 +55,9 @@ const Services = () => {
                   <Link href="service-details">Social Media Marketing</Link>
                 </h3>
                 <p>
-                Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos, 
-                copywriting envolvente e análise de desempenho. 
-                Mais visibilidade e conexão com seu público-alvo.
+                  Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos,
+                  copywriting envolvente e análise de desempenho.
+                  Mais visibilidade e conexão com seu público-alvo.
                 </p>
               </div>
             </div>
@@ -75,8 +75,8 @@ const Services = () => {
                   <Link href="service-details">Máquina de Vendas</Link>
                 </h3>
                 <p>
-                Automatize sua captação e conversão de clientes com funis de venda inteligentes. Sequências estratégicas de e-mails e WhatsApp, visando 
-                engajar, nutrir e converter leads em clientes
+                  Automatize sua captação e conversão de clientes com funis de venda inteligentes. Sequências estratégicas de e-mails e WhatsApp, visando
+                  engajar, nutrir e converter leads em clientes
                 </p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const Services = () => {
                   <Link href="service-details">Criativos</Link>
                 </h3>
                 <p>
-                Produção de conteúdos persuasivos com copywriting, uso de palavras-chave e frameworks de marketing, otimizando seu posicionamento digital e aumentando conversões.
+                  Produção de conteúdos persuasivos com copywriting, uso de palavras-chave e frameworks de marketing, otimizando seu posicionamento digital e aumentando conversões.
                 </p>
               </div>
             </div>
@@ -112,8 +112,8 @@ const Services = () => {
                   <Link href="service-details">Sites e Landing Pages</Link>
                 </h3>
                 <p>
-                Criamos Sites e Landing Pages otimizados, com uso de novas tecnologias, estética moderna e 
-                copywriting persuasivo, garantindo alto desempenho, SEO eficiente e máxima conversão
+                  Criamos Sites e Landing Pages otimizados, com uso de novas tecnologias, estética moderna e
+                  copywriting persuasivo, garantindo alto desempenho, SEO eficiente e máxima conversão
                 </p>
               </div>
             </div>
@@ -131,8 +131,8 @@ const Services = () => {
                   <Link href="service-details">SEO</Link>
                 </h3>
                 <p>
-                Aplicação de estratégias avançadas de SEO, incluindo otimização técnica, conteúdo estratégico e pesquisa de palavras-chave, 
-                para aumentar sua visibilidade, tráfego qualificado e conversões no Google.
+                  Aplicação de estratégias avançadas de SEO, incluindo otimização técnica, conteúdo estratégico e pesquisa de palavras-chave,
+                  para aumentar sua visibilidade, tráfego qualificado e conversões no Google.
                 </p>
               </div>
             </div>
