@@ -2,6 +2,8 @@
 import { nextUtility } from "@/utility";
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
+import { usePathname } from 'next/navigation';
+
 const Header = ({ header, single }) => {
   useEffect(() => {
     nextUtility.stickyNav();
@@ -25,6 +27,9 @@ const Header = ({ header, single }) => {
 export default Header;
 
 const Menu = ({ single, menu }) => {
+  const pathname = usePathname();
+  const isTermsPage = pathname === "/terms";
+
   const singleMenu = menu
     ? menu
     : [
@@ -45,7 +50,7 @@ const Menu = ({ single, menu }) => {
               </Link>
             </li>
 
-            {singleMenu.map((menu) => (
+            {!isTermsPage && singleMenu.map((menu) => (
               <li key={menu.id}>
                 <a href={`#${menu.href}`}>{menu.title}</a>
               </li>
@@ -55,87 +60,92 @@ const Menu = ({ single, menu }) => {
       ) : (
         <nav id="mobile-menu" className="d-none d-xl-block">
           <ul>
-            <li className="has-dropdown active menu-thumb">
-              <Link href="/">
-                Home
-                <i />
-              </Link>
-            </li>
+            {!isTermsPage && (
+              <li className="has-dropdown active menu-thumb">
+                <Link href="/">
+                  Home
+                  <i />
+                </Link>
+              </li>
+            )}
 
-            <li>
-              <Link href="service-details">
-                Serviços
-                <i className="fas fa-angle-down" />
-              </Link>
-              <ul className="submenu">
+            {!isTermsPage && (
+              <>
                 <li>
-                  <Link href="service">Serviços</Link>
-                </li>
-                <li>
-                  <Link href="service-details">Serviços</Link>
-                </li>
-              </ul>
-            </li>
-            <li className="has-dropdown">
-              <Link href="news">
-                Páginas
-                <i className="fas fa-angle-down" />
-              </Link>
-              <ul className="submenu">
-                <li className="has-dropdown">
-                  <Link href="project-details">
-                    Projetos
+                  <Link href="service-details">
+                    Serviços
                     <i className="fas fa-angle-down" />
                   </Link>
                   <ul className="submenu">
                     <li>
-                      <Link href="project">Projetos</Link>
+                      <Link href="service">Serviços</Link>
                     </li>
                     <li>
-                      <Link href="project-details">Projetos Details</Link>
+                      <Link href="service-details">Serviços</Link>
                     </li>
                   </ul>
                 </li>
                 <li className="has-dropdown">
-                  <Link href="team-details">
-                    Time
+                  <Link href="news">
+                    Páginas
                     <i className="fas fa-angle-down" />
                   </Link>
                   <ul className="submenu">
-                    <li>
-                      <Link href="team">Time</Link>
+                    <li className="has-dropdown">
+                      <Link href="project-details">
+                        Projetos
+                        <i className="fas fa-angle-down" />
+                      </Link>
+                      <ul className="submenu">
+                        <li>
+                          <Link href="project">Projetos</Link>
+                        </li>
+                        <li>
+                          <Link href="project-details">Projetos Details</Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="has-dropdown">
+                      <Link href="team-details">
+                        Time
+                        <i className="fas fa-angle-down" />
+                      </Link>
+                      <ul className="submenu">
+                        <li>
+                          <Link href="team">Time</Link>
+                        </li>
+                        <li>
+                          <Link href="team-details">Time</Link>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <Link href="team-details">Time</Link>
+                      <Link href="pricing">Planos</Link>
+                    </li>
+                    <li>
+                      <Link href="404">404 Pagina</Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link href="pricing">Planos</Link>
+                  <Link href="news">
+                    Blog
+                    <i className="fas fa-angle-down" />
+                  </Link>
+                  <ul className="submenu">
+                    <li>
+                      <Link href="news">Blog </Link>
+                    </li>
+                    <li>
+                      <Link href="news-details">Blog</Link>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <Link href="404">404 Pagina</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link href="news">
-                Blog
-                <i className="fas fa-angle-down" />
-              </Link>
-              <ul className="submenu">
-                <li>
-                  <Link href="news">Blog </Link>
-                </li>
-                <li>
-                  <Link href="news-details">Blog</Link>
-                </li>
-              </ul>
-            </li>
+              </>
+            )}
             <li>
               <Link href="contact">Contato</Link>
             </li>
-
             <li>
               <Link href="about">Sobre</Link>
             </li>
