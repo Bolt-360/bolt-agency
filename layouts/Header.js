@@ -78,7 +78,7 @@ const Menu = ({ single, menu }) => {
             {!hideMenu && (
               <>
                 <li>
-                  <Link href="servicos">
+                  <Link href="/#services">
                     Serviços
                   </Link>
                 </li>
