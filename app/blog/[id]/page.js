@@ -48,7 +48,10 @@ export default function BlogPost({ params }) {
                 <p className="card-text">{postData.content}</p>
 
                 {/* Botão de Voltar */}
-                <div className="mt-4">
+                <div className="mt-4 d-flex gap-3">
+                  <Link href="/home" className="btn btn-primary">
+                    <i className="fas fa-home me-2"></i> Voltar para Home
+                  </Link>
                   <Link href="/blog" className="btn btn-primary">
                     <i className="fas fa-arrow-left me-2"></i> Voltar para o Blog
                   </Link>

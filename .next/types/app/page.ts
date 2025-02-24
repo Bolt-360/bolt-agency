@@ -1,4 +1,4 @@
-// File: C:\Users\victo\Documents\GitHub\bolt-agency\app\page.js
+// File: /home/bolt360/bolt.agency-main/app/page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
