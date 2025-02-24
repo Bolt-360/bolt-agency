@@ -209,7 +209,7 @@ const page = () => {
                         />
                         <p>
                           Li e concordo com{" "}
-                          <Link href="/">Termos &amp; Condições</Link>
+                          <Link href="/terms" target="_blank" rel="noopener noreferrer">Termos &amp; Condições</Link>
                         </p>
                       </div>
                     </div>
