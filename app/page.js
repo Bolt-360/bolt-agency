@@ -135,7 +135,7 @@ const page = () => {
                     Fale Conosco Agora <i className="far fa-arrow-right" />
                   </Link>
                   <Link
-                    href="servicos"
+                    href="/#services"
                     className="btn-link wow fadeInUp"
                     data-wow-delay=".6s"
                   >
