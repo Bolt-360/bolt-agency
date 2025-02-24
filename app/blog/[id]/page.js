@@ -49,10 +49,10 @@ export default function BlogPost({ params }) {
 
                 {/* Botão de Voltar */}
                 <div className="mt-4 d-flex gap-3">
-                  <Link href="/home" className="btn btn-primary">
+                  <Link href="/" className="theme-btn">
                     <i className="fas fa-home me-2"></i> Voltar para Home
                   </Link>
-                  <Link href="/blog" className="btn btn-primary">
+                  <Link href="/blog" className="theme-btn">
                     <i className="fas fa-arrow-left me-2"></i> Voltar para o Blog
                   </Link>
                 </div>
