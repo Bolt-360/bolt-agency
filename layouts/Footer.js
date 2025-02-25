@@ -449,9 +449,6 @@ const Footer3 = () => {
                     <Link href="team-details">Time Bolt</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacidade &amp; Configurações</Link>
-                  </li>
-                  <li>
                     <Link href="pricing">Planos</Link>
                   </li>
                 </ul>
@@ -602,13 +599,10 @@ const Footer4 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Serviços</Link>
+                    <Link href="#services">Serviços</Link>
                   </li>
                   <li>
-                    <Link href="team-details">Time Bolt</Link>
-                  </li>
-                  <li>
-                    <Link href="contact">Privacidade &amp; Configurações</Link>
+                    <Link href="/team">Time Bolt</Link>
                   </li>
                   <li>
                     <Link href="pricing">Planos</Link>

@@ -42,7 +42,7 @@ const Services = () => {
                   <i className="flaticon-keywords" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>Keywords</h3>
+                  <h3 className="text-white">Keywords</h3>
                   <p>
                     Identificamos os termos ideais do seu público (palavras chave) e criamos a melhor estratégia para otimizar e posicionar seu site na pesquisa do Google,
                     usando elas em posts nas redes sociais, blog etc
@@ -62,7 +62,7 @@ const Services = () => {
                   <i className="flaticon-social-media" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>Social Media Marketing</h3>
+                  <h3 className="text-white">Social Media Marketing</h3>
                   <p>
                     Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos,
                     copywriting envolvente e análise de desempenho.
@@ -159,7 +159,7 @@ const Services = () => {
 
 export default Services;
 
-export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
+/*export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
   return (
     <section
       className={`service-section section-padding pt-${paddingTop}`}
@@ -247,4 +247,4 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
       </div>
     </section>
   );
-};
+};*/
