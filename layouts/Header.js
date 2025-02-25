@@ -29,13 +29,15 @@ export default Header;
 const Menu = ({ single, menu }) => {
   const pathname = usePathname();
   const isTermsPage = pathname === "/terms";
+  const isServicosPage = pathname === "/servicos";
+  const hideMenu = isTermsPage || isServicosPage;
 
   const singleMenu = menu
     ? menu
     : [
       { id: 1, href: "about", title: "Quem Somos" },
       { id: 2, href: "services", title: "Serviços" },
-      { id: 3, href: "team", title: "Time" },
+      { id: 3, href: "/team", title: "Time" },
       { id: 4, href: "blog", title: "Blog" },
     ];
   return (
@@ -50,9 +52,13 @@ const Menu = ({ single, menu }) => {
               </Link>
             </li>
 
-            {!isTermsPage && singleMenu.map((menu) => (
+            {!hideMenu && singleMenu.map((menu) => (
               <li key={menu.id}>
-                <a href={`#${menu.href}`}>{menu.title}</a>
+                {menu.href.startsWith('/') ? (
+                  <Link href={menu.href}>{menu.title}</Link>
+                ) : (
+                  <a href={`#${menu.href}`}>{menu.title}</a>
+                )}
               </li>
             ))}
           </ul>
@@ -60,7 +66,7 @@ const Menu = ({ single, menu }) => {
       ) : (
         <nav id="mobile-menu" className="d-none d-xl-block">
           <ul>
-            {!isTermsPage && (
+            {!hideMenu && (
               <li className="has-dropdown active menu-thumb">
                 <Link href="/">
                   Home
@@ -69,21 +75,12 @@ const Menu = ({ single, menu }) => {
               </li>
             )}
 
-            {!isTermsPage && (
+            {!hideMenu && (
               <>
                 <li>
-                  <Link href="service-details">
+                  <Link href="/#services">
                     Serviços
-                    <i className="fas fa-angle-down" />
                   </Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link href="service">Serviços</Link>
-                    </li>
-                    <li>
-                      <Link href="service-details">Serviços</Link>
-                    </li>
-                  </ul>
                 </li>
                 <li className="has-dropdown">
                   <Link href="news">
@@ -94,36 +91,15 @@ const Menu = ({ single, menu }) => {
                     <li className="has-dropdown">
                       <Link href="project-details">
                         Projetos
-                        <i className="fas fa-angle-down" />
                       </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link href="project">Projetos</Link>
-                        </li>
-                        <li>
-                          <Link href="project-details">Projetos Details</Link>
-                        </li>
-                      </ul>
                     </li>
                     <li className="has-dropdown">
-                      <Link href="team-details">
+                      <Link href="/team">
                         Time
-                        <i className="fas fa-angle-down" />
                       </Link>
-                      <ul className="submenu">
-                        <li>
-                          <Link href="team">Time</Link>
-                        </li>
-                        <li>
-                          <Link href="team-details">Time</Link>
-                        </li>
-                      </ul>
                     </li>
                     <li>
                       <Link href="pricing">Planos</Link>
-                    </li>
-                    <li>
-                      <Link href="404">404 Pagina</Link>
                     </li>
                   </ul>
                 </li>
@@ -134,10 +110,10 @@ const Menu = ({ single, menu }) => {
                   </Link>
                   <ul className="submenu">
                     <li>
-                      <Link href="news">Blog </Link>
+                      <Link href="news">Posts</Link>
                     </li>
                     <li>
-                      <Link href="news-details">Blog</Link>
+                      <Link href="news-details">Notícias Recentes</Link>
                     </li>
                   </ul>
                 </li>
@@ -172,7 +148,7 @@ const MobileMenu = ({ single, menu }) => {
     : [
       { id: 1, href: "about", title: "About" },
       { id: 2, href: "services", title: "Services" },
-      { id: 3, href: "team", title: "Team" },
+      { id: 3, href: "/team", title: "Team" },
       { id: 4, href: "blog", title: "Blog" },
     ];
   return (
@@ -222,7 +198,7 @@ const MobileMenu = ({ single, menu }) => {
                       <Link href="service">Serviços</Link>
                     </li>
                     <li>
-                      <Link href="service-details">Serviços Detalhados</Link>
+                      <Link href="servicos">Serviços Detalhados</Link>
                     </li>
                   </ul>
                   <a
@@ -265,15 +241,12 @@ const MobileMenu = ({ single, menu }) => {
                     </li>
                     <li className="has-dropdown">
                       <a href="#" onClick={() => multiMenuSet("Team")}>
-                        Team
+                        Time
                         <i className="fas fa-angle-down" />
                       </a>
                       <ul className="submenu" style={multiMenuActiveLi("Team")}>
                         <li>
-                          <Link href="team">Time</Link>
-                        </li>
-                        <li>
-                          <Link href="team-details">Detalhes do Time</Link>
+                          <Link href="/team">Time</Link>
                         </li>
                       </ul>
                       <a
@@ -342,7 +315,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
               <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                 <div className="offcanvas__logo">
                   <Link href="/">
-                    <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                    <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="offcanvas__close" onClick={() => close()}>
@@ -441,14 +414,14 @@ const Header1 = ({ single, menu }) => {
               <div className="sticky-logo">
                 <Link href="/">
                   <img
-                    src="assets/img/logo/white-logo.svg"
+                    src="/assets/img/logo/white-logo.svg"
                     alt="logo-img"
                     className="logo-1"
                   />
                 </Link>
                 <Link href="/">
                   <img
-                    src="assets/img/logo/black-logo.svg"
+                    src="/assets/img/logo/black-logo.svg"
                     alt="logo-img"
                     className="logo-2"
                   />
@@ -511,7 +484,7 @@ const Header2 = ({ single }) => {
             <div className="header-main">
               <div className="sticky-logo">
                 <Link href="/">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                 </Link>
               </div>
               <div className="header-left">
@@ -555,7 +528,7 @@ const Header3 = ({ single }) => {
   const singleMenu = [
     { id: 2, href: "services", title: "Services" },
     { id: 1, href: "about", title: "About" },
-    { id: 3, href: "team", title: "Team" },
+    { id: 3, href: "/team", title: "Team" },
     { id: 4, href: "testimonial", title: "Testimonial" },
     { id: 4, href: "blog", title: "Blog" },
   ];
@@ -567,7 +540,7 @@ const Header3 = ({ single }) => {
             <div className="header-main">
               <div className="sticky-logo">
                 <Link href="/">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                 </Link>
               </div>
               <div className="header-left">
@@ -633,10 +606,10 @@ const Header5 = ({ single }) => {
             <div className="header-main">
               <div className="sticky-logo">
                 <Link href="/" className="logo-1">
-                  <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
                 </Link>
                 <Link href="/" className="logo-2">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                 </Link>
               </div>
               <div className="header-left">
@@ -672,11 +645,7 @@ const Header5 = ({ single }) => {
 
 const Header6 = ({ single }) => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
-  const singleMenu = [
-    { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "feature", title: "Feature" },
-    { id: 4, href: "pricing", title: "Pricing" },
-  ];
+  const singleMenu = [];
   return (
     <Fragment>
       <header id="header-sticky" className="header-3">
@@ -685,7 +654,7 @@ const Header6 = ({ single }) => {
             <div className="header-main">
               <div className="sticky-logo">
                 <Link href="/">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                 </Link>
               </div>
               <div className="header-left">
@@ -697,8 +666,8 @@ const Header6 = ({ single }) => {
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button">
-                  <Link href="contact" className="theme-btn bg-2">
-                    Faça um Diagnóstico Gratuito
+                  <Link href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer" className="theme-btn bg-2">
+                    Fale Conosco
                   </Link>
                 </div>
                 <div className="header__hamburger d-xl-block my-auto">

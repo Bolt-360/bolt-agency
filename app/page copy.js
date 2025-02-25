@@ -1,6 +1,6 @@
 import Pricing from "@/components/bakPricing";
 import Faq from "@/components/Faq";
-import Services from "@/components/Services";
+import Services from "@/components/services/Services";
 import {
   TestimonialSlider4,
   TestimonialSlider5,

@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Faq from "@/components/Faq";
 import Pricing from "@/components/Pricing";
-import Services from "@/components/Services";
+import Services from "@/components/services/Services";
 import { TestimonialSlider4, TestimonialSlider5 } from "@/components/TestimonialSlider";
 import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
@@ -119,8 +119,8 @@ const page = () => {
             <div className="col-lg-6">
               <div className="hero-content">
                 <span className="sub-content wow fadeInUp" data-wow-delay=".2s">
-                  <img src="assets/img/bale.png" alt="img" />
-                  25+ Anos de Experiência
+                  <img src="assets/img/balewhite.png" alt="img" />
+                   25+ Anos de Experiência
                 </span>
                 <h1 className="wow fadeInUp" data-wow-delay=".2s">
                   O Marketing Digital <br />
@@ -135,7 +135,7 @@ const page = () => {
                     Fale Conosco Agora <i className="far fa-arrow-right" />
                   </Link>
                   <Link
-                    href="servicos"
+                    href="/#services"
                     className="btn-link wow fadeInUp"
                     data-wow-delay=".6s"
                   >
