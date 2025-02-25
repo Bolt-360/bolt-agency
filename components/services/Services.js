@@ -36,132 +36,120 @@ const Services = () => {
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".3s"
           >
-            <Link href="/servicos/keywords">
-              <div className="service-box-items">
+            <div className="service-box-items">
+              <Link href="/servicos/keywords">
                 <div className="icon">
                   <i className="flaticon-keywords" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/keywords">Keywords</Link>
-                  </h3>
+                  <h3>Keywords</h3>
                   <p>
                     Identificamos os termos ideais do seu público (palavras chave) e criamos a melhor estratégia para otimizar e posicionar seu site na pesquisa do Google,
                     usando elas em posts nas redes sociais, blog etc
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
 
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".5s"
           >
-            <Link href="/servicos/social-media-marketing">
-              <div className="service-box-items active">
+            <div className="service-box-items">
+              <Link href="/servicos/social-media-marketing">
                 <div className="icon">
                   <i className="flaticon-social-media" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/social-media-marketing">Social Media Marketing</Link>
-                  </h3>
+                  <h3>Social Media Marketing</h3>
                   <p>
                     Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos,
                     copywriting envolvente e análise de desempenho.
                     Mais visibilidade e conexão com seu público-alvo.
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
 
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".7s"
           >
-            <Link href="/servicos/maquina-vendas">
-              <div className="service-box-items">
+            <div className="service-box-items">
+              <Link href="/servicos/maquina-vendas">
                 <div className="icon">
                   <i className="flaticon-email-marketing" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/maquina-vendas">Máquina de Vendas</Link>
-                  </h3>
+                  <h3 className="text-white">Máquina de Vendas</h3>
                   <p>
                     Automatize sua captação e conversão de clientes com funis de venda inteligentes. Sequências estratégicas de e-mails e WhatsApp, visando
                     engajar, nutrir e converter leads em clientes
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
 
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".3s"
           >
-            <Link href="/servicos/criativos">
-              <div className="service-box-items">
+            <div className="service-box-items">
+              <Link href="/servicos/criativos">
                 <div className="icon">
                   <i className="flaticon-copy-writing" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/criativos">Criativos</Link>
-                  </h3>
+                  <h3 className="text-white">Criativos</h3>
                   <p>
                     Produção de conteúdos persuasivos com copywriting, uso de palavras-chave e frameworks de marketing, otimizando seu posicionamento digital e aumentando conversões.
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
 
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".5s"
           >
-            <Link href="/servicos/sites-landing-pages">
-              <div className="service-box-items">
+            <div className="service-box-items">
+              <Link href="/servicos/sites-landing-pages">
                 <div className="icon">
                   <i className="flaticon-software-development" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/sites-landing-pages">Sites e Landing Pages</Link>
-                  </h3>
+                  <h3 className="text-white">Sites e Landing Pages</h3>
                   <p>
                     Criamos Sites e Landing Pages otimizados, com uso de novas tecnologias, estética moderna e
                     copywriting persuasivo, garantindo alto desempenho, SEO eficiente e máxima conversão
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
           
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".7s"
           >
-            <Link href="/servicos/seo">
-              <div className="service-box-items">
+            <div className="service-box-items">
+              <Link href="/servicos/seo">
                 <div className="icon">
                   <i className="flaticon-www" />
                 </div>
                 <div className="content" style={{ color: "#696969"}}>
-                  <h3>
-                    <Link href="/servicos/seo">SEO</Link>
-                  </h3>
+                  <h3 className="text-white">SEO</h3>
                   <p>
                     Aplicação de estratégias avançadas de SEO, incluindo otimização técnica, conteúdo estratégico e pesquisa de palavras-chave,
                     para aumentar sua visibilidade, tráfego qualificado e conversões no Google.
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
