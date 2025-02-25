@@ -1,18 +1,18 @@
 import Link from "next/link"
 import NextLayout from "@/layouts/NextLayout"
-
+import Image from "next/image"  
 const ServiceDetail = ({ service }) => {
   return (
-    <NextLayout header={1} footer={4}>
-      <section
-      className="service-section-4 fix bg-cover section-padding py-16"
-      style={{ backgroundColor: "#fff" }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="section-title text-center mb-12">
-            <span className="sub-content bg-color-3 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full text-black font-medium wow fadeInUp">
-              <img src="/assets/img/bale.png" alt="ícone" className="w-5 h-5" />
-              Impulsione seus Resultados com nossos Serviços
+    <NextLayout header={0} footer={3}>
+      <section className="service-section-4 fix bg-cover section-padding"
+        style={{
+          backgroundImage: 'url("/assets/img/service/service-bg-min.jpg")',
+        }}>
+        <div className="container">
+          <div className="section-title text-center">
+            <span className="sub-content bg-color-3 wow fadeInUp">
+              <Image src="/assets/img/balewhite.png" alt="img" width={24} height={24} priority quality={100} />
+              Impulsione seus Resultados com nosso Serviços
             </span>
             <h2 
               className="text-4xl font-bold mt-6 mb-3 wow fadeInUp" 

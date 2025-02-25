@@ -1,13 +1,12 @@
 import Link from "next/link";
 
 const Pricing = () => {
-  const whatsappBolt = "https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency";
   const plans = [
     {
       name: "Essencial",
       description: "Para pequenas empresas",
       setupCost: "Setup",
-      monthlyCost: "R$790,",
+      monthlyCost: "R$790,00",
       features: [
         "✔️ 5 Páginas Otimizadas",
         "✔️ Copywriting Estratégico Básico",
@@ -24,7 +23,7 @@ const Pricing = () => {
       name: "Profissional",
       description: "Para pequenas e médias empresas",
       setupCost: "Setup",
-      monthlyCost: "R$1.290,",
+      monthlyCost: "R$1.290,00",
       features: [
         "✔️ 10 Páginas + SEO Avançado",
         "✔️ Copywriting Estratégico Profissional",
@@ -41,7 +40,7 @@ const Pricing = () => {
       name: "Premium",
       description: "Para médias e grandes empresas",
       setupCost: "Setup",
-      monthlyCost: "R$1.990,",
+      monthlyCost: "R$1.990,00",
       features: [
         "✔️ 15+ Páginas + Estratégia Completa",
         "✔️ Copywriting Estratégico Premium e Persuasivo",
@@ -98,7 +97,7 @@ const Pricing = () => {
                   </h2>
                 </div>
                 <div className="pricing-button">
-                  <Link href={whatsappBolt} target="_blank" className="theme-btn style-transparent">
+                  <Link href={`https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency+e+estou+interessado+no+plano+${plan.name}+e+gostaria+de+mais+informa%C3%A7%C3%B5es`} target="_blank" className="theme-btn style-transparent">
                     Escolher Plano
                   </Link>
                 </div>

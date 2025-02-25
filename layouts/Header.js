@@ -70,7 +70,6 @@ const Menu = ({ single, menu }) => {
               <li className="has-dropdown active menu-thumb">
                 <Link href="/">
                   Home
-                  <i />
                 </Link>
               </li>
             )}
@@ -367,12 +366,12 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="far fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency">+558431901700</a>
+                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">+558431901700</a>
                     </div>
                   </li>
                 </ul>
                 <div className="header-button mt-4">
-                  <Link href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" className="theme-btn text-center">
+                  <Link href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer" className="theme-btn text-center">
                     Fale Conosco
                   </Link>
                 </div>
