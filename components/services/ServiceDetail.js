@@ -1,6 +1,6 @@
 import Link from "next/link"
 import NextLayout from "@/layouts/NextLayout"
-
+import Image from "next/image"  
 const ServiceDetail = ({ service }) => {
   return (
     <NextLayout header={0} footer={3}>
@@ -11,7 +11,7 @@ const ServiceDetail = ({ service }) => {
         <div className="container">
           <div className="section-title text-center">
             <span className="sub-content bg-color-3 wow fadeInUp">
-              <img src="/assets/img/balewhite.png" alt="img" />
+              <Image src="/assets/img/balewhite.png" alt="img" width={24} height={24} priority quality={100} />
               Impulsione seus Resultados com nosso Serviços
             </span>
             <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">      

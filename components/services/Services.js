@@ -1,18 +1,27 @@
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from 'react';
 
 const Services = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <section
       className="service-section-4 fix bg-cover section-padding"
       style={{
-        backgroundImage: 'url("assets/img/service/service-bg-min.jpg")',
+        backgroundImage: isLoaded ? 'url("/assets/img/service/service-bg-min.jpg")' : 'none',
+        backgroundColor: '#1a1a1a',
       }}
       id="services"
     >
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content bg-color-3 wow fadeInUp">
-            <img src="assets/img/balewhite.png" alt="img" />
+              <Image src="assets/img/balewhite.png" alt="img" width={24} height={24} priority quality={100} />
             Serviços
           </span>
           <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
@@ -142,6 +151,7 @@ const Services = () => {
     </section>
   );
 };
+
 export default Services;
 
 export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
@@ -153,7 +163,7 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">
-            <img src="assets/img/bale.png" alt="img" />
+            <Image src="assets/img/bale.png" alt="img" width={24} height={24} priority quality={100} />
             {title}
           </span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
@@ -168,7 +178,7 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
           >
             <div className="service-popular-items">
               <div className="service-image">
-                <img src="assets/img/service/08.png" alt="img" />
+                <Image src="assets/img/service/08.png" alt="img" quality={100} />
               </div>
               <div className="service-content">
                 <h3>
@@ -190,7 +200,7 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
           >
             <div className="service-popular-items">
               <div className="service-image">
-                <img src="assets/img/service/09.png" alt="img" />
+                <Image src="assets/img/service/09.png" alt="img" priority quality={100} />
               </div>
               <div className="service-content">
                 <h3>
@@ -212,7 +222,7 @@ export const Service2 = ({ paddingTop = 0, title = "Popular Services" }) => {
           >
             <div className="service-popular-items">
               <div className="service-image">
-                <img src="assets/img/service/10.png" alt="img" />
+                <Image src="assets/img/service/10.png" alt="img" quality={100} />
               </div>
               <div className="service-content">
                 <h3>
