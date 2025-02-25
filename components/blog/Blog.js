@@ -1,10 +1,29 @@
 "use client";
-
+import { getBlogPosts } from "@/data/posts";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
-const Blog = ({ posts }) => {
-  if (!posts || !Array.isArray(posts)) {
-    return <div>Carregando posts...</div>; // Fallback
+function Blog() {
+  const [posts, setPosts] = useState([]); // Estado para armazenar os posts
+  const [loading, setLoading] = useState(true); // Estado de carregamento
+
+  useEffect(() => {
+    async function fetchPosts() {
+      try {
+        const data = await getBlogPosts();
+        setPosts(data); // Atualiza o estado com os posts
+      } catch (error) {
+        console.error("Erro ao buscar posts:", error);
+      } finally {
+        setLoading(false); // Finaliza o carregamento
+      }
+    }
+    
+    fetchPosts();
+  }, []);
+
+  if (loading) {
+    return <div>Carregando posts...</div>; // Fallback de carregamento
   }
 
   return (
@@ -23,7 +42,7 @@ const Blog = ({ posts }) => {
           {posts.map((post, index) => (
             <div
               key={post.id}
-              className={`col-xl-4 col-lg-6 col-md-6 wow fadeInUp`}
+              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
               data-wow-delay={`.${(index + 3) * 2}s`}
             >
               <div className="news-card-items style-2">
@@ -47,6 +66,6 @@ const Blog = ({ posts }) => {
       </div>
     </section>
   );
-};
+}
 
 export default Blog;

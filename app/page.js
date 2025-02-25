@@ -17,8 +17,7 @@ import Blog from '@/components/blog/Blog';
 import { getBlogPosts } from './api/posts';
 
 const Page = () => {
-  const posts = getBlogPosts();
-
+  
   const [isOpen, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isAccepted, setIsAccepted] = useState(false);
@@ -373,7 +372,7 @@ const Page = () => {
       </section>
       <Faq />
       <Pricing />
-      <Blog posts={posts} />
+      <Blog/>
       <section className="contact-section fix section-padding pt-0 fix">
         <div className="pattern-shape">
           <img src="assets/img/box-pattern.png" alt="radius-shape" />
