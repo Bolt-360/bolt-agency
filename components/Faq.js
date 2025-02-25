@@ -36,7 +36,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="faq-section section-padding">
+    <section className="faq-section section-padding" id="faq">
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">

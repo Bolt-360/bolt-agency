@@ -327,7 +327,7 @@ const page = () => {
                     className="about-button wow fadeInUp"
                     data-wow-delay=".5s"
                   >
-                    <Link href="about" className="theme-btn bg-2">
+                    <Link href="about-us" className="theme-btn bg-2">
                       Saiba mais sobre a Bolt 360 Assessoria
                       <i className="far fa-arrow-right" />
                     </Link>

@@ -89,10 +89,7 @@ const Footer1 = () => {
                     <Link href="team-details">Time</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacidade</Link>
-                  </li>
-                  <li>
-                    <Link href="pricing">Planos</Link>
+                    <Link href="/#pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -122,9 +119,7 @@ const Footer1 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:contato@bolt360.com.br" className="link">
-                        contato@bolt360.com.br
-                      </a>
+                      <p>contato@bolt360.com.br</p>
                     </div>
                   </div>
                   <div className="contact-items">
@@ -195,13 +190,10 @@ const Footer1 = () => {
             <div className="footer-wrapper d-flex align-items-center justify-content-between">
               <ul className="footer-menu wow fadeInUp" data-wow-delay=".2s">
                 <li>
-                  <Link href="faq">FAQs</Link>
+                  <Link href="#faq">FAQs</Link>
                 </li>
                 <li>
-                  <Link href="about">Empresa</Link>
-                </li>
-                <li>
-                  <Link href="contact">Privacidade</Link>
+                  <Link href="about">Quem Somos</Link>
                 </li>
               </ul>
               <a
@@ -374,13 +366,10 @@ const Footer2 = () => {
           <div className="footer-wrapper d-flex align-items-center justify-content-between pb-0">
             <ul className="footer-menu">
               <li>
-                <Link href="faq">FAQs</Link>
+                <Link href="#faq">FAQs</Link>
               </li>
               <li>
                 <Link href="about">Empresa</Link>
-              </li>
-              <li>
-                <Link href="contact">Privacidade</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -443,13 +432,13 @@ const Footer3 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Serviços</Link>
+                    <Link href="/#services">Serviços</Link>
                   </li>
                   <li>
                     <Link href="team-details">Time Bolt</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Planos</Link>
+                    <Link href="/#pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -468,10 +457,10 @@ const Footer3 = () => {
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="content">
-                      <p>
+                      <a href="https://maps.app.goo.gl/HAjuRBQVTE3RhSHy6" target="_blank" rel="noopener noreferrer" >
                         Rua Tereza Bezerra Salustino, 1902<br />
                         Lagoa Nova, Natal/RN, Brasil
-                      </p>
+                      </a>
                     </div>
                   </div>
                   <div className="contact-items color-style-2">
@@ -479,9 +468,7 @@ const Footer3 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:contato@bolt360.com.br" className="link">
-                        contato@bolt360.com.br
-                      </a>
+                    <p>contato@bolt360.com.br</p>
                     </div>
                   </div>
                   <div className="contact-items color-style-2">
@@ -524,13 +511,10 @@ const Footer3 = () => {
           <div className="footer-wrapper d-flex align-items-center justify-content-between pb-0">
             <ul className="footer-menu">
               <li>
-                <Link href="faq">FAQs</Link>
+                <Link href="#faq">FAQs</Link>
               </li>
               <li>
-                <Link href="about">Empresa</Link>
-              </li>
-              <li>
-                <Link href="contact">Privacidade</Link>
+                <Link href="about">Quem Somos</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -599,13 +583,13 @@ const Footer4 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="#services">Serviços</Link>
+                    <Link href="/#services">Serviços</Link>
                   </li>
                   <li>
                     <Link href="/team">Time Bolt</Link>
                   </li>
                   <li>
-                    <Link href="pricing">Planos</Link>
+                    <Link href="/#pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -624,10 +608,10 @@ const Footer4 = () => {
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="content">
-                      <p>
+                      <a href="https://maps.app.goo.gl/HAjuRBQVTE3RhSHy6" target="_blank" rel="noopener noreferrer">
                         Rua Tereza Bezerra Salustino, 1902<br />
                         Lagoa Nova, Natal/RN, Brasil
-                      </p>
+                      </a>
                     </div>
                   </div>
                   <div className="contact-items color-style-2">
@@ -635,9 +619,7 @@ const Footer4 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:info@example.com" className="link">
-                        contato@bolt360.com.br
-                      </a>
+                    <p>contato@bolt360.com.br</p>
                     </div>
                   </div>
                   <div className="contact-items color-style-2">
@@ -680,13 +662,10 @@ const Footer4 = () => {
           <div className="footer-wrapper d-flex align-items-center justify-content-between pb-0">
             <ul className="footer-menu">
               <li>
-                <Link href="faq">FAQs</Link>
+                <Link href="#faq">FAQs</Link>
               </li>
               <li>
                 <Link href="about">Quem Somos</Link>
-              </li>
-              <li>
-                <Link href="contact">Privacidade</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -768,16 +747,13 @@ const Footer6 = () => {
                 </div>
                 <ul className="list-items">
                   <li>
-                    <Link href="servicos">Serviços</Link>
+                    <Link href="/services">Serviços</Link>
                   </li>
                   <li>
                     <Link href="team-details">Time</Link>
                   </li>
                   <li>
-                    <Link href="contact">Privacidade</Link>
-                  </li>
-                  <li>
-                    <Link href="pricing">Planos</Link>
+                    <Link href="/#pricing">Planos</Link>
                   </li>
                 </ul>
               </div>
@@ -796,10 +772,10 @@ const Footer6 = () => {
                       <i className="fas fa-map-marker-alt" />
                     </div>
                     <div className="content">
-                      <p>
+                      <a href="https://maps.app.goo.gl/HAjuRBQVTE3RhSHy6" target="_blank" rel="noopener noreferrer">
                         Rua Tereza Bezerra Salustino, 1902<br />
                         Lagoa Nova, Natal/RN, Brasil
-                      </p>
+                      </a>
                     </div>
                   </div>
                   <div className="contact-items">
@@ -807,9 +783,7 @@ const Footer6 = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <a href="mailto:contato@bolt360.com.br" className="link">
-                        contato@bolt360.com.br
-                      </a>
+                    <p>contato@bolt360.com.br</p>
                     </div>
                   </div>
                   <div className="contact-items">
@@ -880,13 +854,10 @@ const Footer6 = () => {
             <div className="footer-wrapper d-flex align-items-center justify-content-between">
               <ul className="footer-menu wow fadeInUp" data-wow-delay=".2s">
                 <li>
-                  <Link href="faq">FAQs</Link>
+                  <Link href="#faq">FAQs</Link>
                 </li>
                 <li>
                   <Link href="about">Quem Somos</Link>
-                </li>
-                <li>
-                  <Link href="contact">Privacidade</Link>
                 </li>
               </ul>
               <a

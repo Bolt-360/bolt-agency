@@ -338,7 +338,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="fal fa-map-marker-alt" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
+                      <a target="_blank" href="https://maps.app.goo.gl/HAjuRBQVTE3RhSHy6">
                         Lagoa Nova, Natal/RN, Brasil
                       </a>
                     </div>
@@ -348,7 +348,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="fal fa-envelope" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="mailto:info@example.com">contato@bolt360.com.br</a>
+                      <p style={{ color: "#000" }}>contato@bolt360.com.br</p>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -356,9 +356,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="fal fa-clock" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a target="_blank" href="#">
-                        Segunda-Sexta, 08am -06pm
-                      </a>
+                      <p style={{ color: "#000" }}>Segunda-Sexta, 08am - 06pm</p>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -366,7 +364,7 @@ const Sidebar = ({ sidebarToggle, close, menu, single }) => {
                       <i className="far fa-phone" />
                     </div>
                     <div className="offcanvas__contact-text">
-                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">+558431901700</a>
+                      <p style={{ color: "#000" }}>+558431901700</p>
                     </div>
                   </li>
                 </ul>
@@ -591,34 +589,39 @@ const Header3 = ({ single }) => {
 
 const Header5 = ({ single }) => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
-  const singleMenu = [
-    { id: 1, href: "about", title: "About" },
-    { id: 2, href: "services", title: "Services" },
-    { id: 3, href: "projects", title: "Projects" },
-    { id: 4, href: "contact", title: "Contact" },
-  ];
   return (
     <Fragment>
-      <header id="header-sticky" className="header-6">
-        <div className="container">
+      <header id="header-sticky" className="header-1">
+        <div className="container-fluid">
           <div className="mega-menu-wrapper">
             <div className="header-main">
               <div className="sticky-logo">
-                <Link href="/" className="logo-1">
-                  <img src="/assets/img/logo/white-logo.svg" alt="logo-img" />
+                <Link href="/">
+                  <img
+                    src="/assets/img/logo/white-logo.svg"
+                    alt="logo-img"
+                    className="logo-1"
+                  />
                 </Link>
-                <Link href="/" className="logo-2">
-                  <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
+                <Link href="/">
+                  <img
+                    src="/assets/img/logo/black-logo.svg"
+                    alt="logo-img"
+                    className="logo-2"
+                  />
                 </Link>
-              </div>
-              <div className="header-left">
-                <div className="mean__menu-wrapper">
-                  <div className="main-menu">
-                    <Menu single={single} menu={singleMenu} />
-                  </div>
-                </div>
               </div>
               <div className="header-right d-flex justify-content-end align-items-center">
+                <div className="icon-items">
+                  <div className="icon white-color">
+                    <i className="fas fa-phone-alt" />
+                  </div>
+                  <div className="content">
+                    <h4>
+                      <a href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
+                    </h4>
+                  </div>
+                </div>
                 <div className="header__hamburger d-xl-block my-auto">
                   <div
                     className="sidebar__toggle"
@@ -636,7 +639,6 @@ const Header5 = ({ single }) => {
         sidebarToggle={sidebarToggle}
         close={() => setSidebarToggle(false)}
         single={single}
-        menu={singleMenu}
       />
     </Fragment>
   );

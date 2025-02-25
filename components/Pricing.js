@@ -56,7 +56,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="pricing-section section-padding">
+    <section className="pricing-section section-padding" id="pricing">
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-content wow fadeInUp">
