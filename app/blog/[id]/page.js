@@ -1,17 +1,23 @@
-// /app/blog/[id]/page.js
-
+// app/blog/[id]/page.js (Server Component)
 import Link from 'next/link';
-import { blogPosts } from '@/components/blog/posts';
-import { getPostById } from '@/components/blog/posts';
+import { getPostById, getAllPostIds } from '@/data/posts';
 import { notFound } from 'next/navigation';
 
-export default function BlogPost({ params }) {
-  const postData = getPostById(params.id);
+export async function generateStaticParams() {
+  const paths = await getAllPostIds();
+  console.log('Parâmetros gerados por generateStaticParams:', paths);
+  return paths;
+}
 
-  // Se o post não for encontrado, retorna 404
+export default async function BlogPost({ params }) {
+  console.log('Parâmetros recebidos em BlogPost:', params);
+  const postData = await getPostById(params.id);
+
   if (!postData) {
     notFound();
   }
+
+  const allPosts = await getBlogPosts();
 
   return (
     <section className="blog-details-section py-5">
@@ -22,7 +28,7 @@ export default function BlogPost({ params }) {
             <div className="card shadow-sm border-0">
               {/* Imagem do Post */}
               <img
-                src={`/${postData.image}`}
+                src={postData.image}
                 alt={postData.title}
                 className="card-img-top img-fluid"
               />
@@ -66,22 +72,20 @@ export default function BlogPost({ params }) {
               <div className="card-body">
                 <h4 className="card-title">Posts Recentes</h4>
                 <ul className="list-unstyled">
-                  {/* Exemplo de post recente */}
-                  {blogPosts.map((post) => (
-                    <li className="d-flex align-items-start mb-3">
-                    <img
-                      src="/path/to/recent-post.jpg"
-                      alt="Post Recente"
-                      className="img-thumbnail me-3"
-                      style={{ width: '60px', height: '60px' }}
-                    />
-                    <div>
-                      <h6 className="mb-1">{post.title}</h6>
-                      <small className="text-muted">{post.date}</small>
-                    </div>
+                  {allPosts.slice(0, 3).map((post) => (
+                    <li key={post.id} className="d-flex align-items-start mb-3">
+                      <img
+                        src={post.image}
+                        alt="Post Recente"
+                        className="img-thumbnail me-3"
+                        style={{ width: '60px', height: '60px' }}
+                      />
+                      <div>
+                        <h6 className="mb-1">{post.title}</h6>
+                        <small className="text-muted">{post.date}</small>
+                      </div>
                     </li>
                   ))}
-                  {/* Adicione mais posts dinamicamente aqui */}
                 </ul>
               </div>
             </div>

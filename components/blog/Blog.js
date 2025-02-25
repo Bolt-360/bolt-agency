@@ -1,29 +1,14 @@
+// components/blog/Blog.js (Client Component)
 "use client";
-import { getBlogPosts } from "@/data/posts";
+
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
-function Blog() {
-  const [posts, setPosts] = useState([]); // Estado para armazenar os posts
-  const [loading, setLoading] = useState(true); // Estado de carregamento
+const Blog = ({ posts }) => {
+  console.log('Posts recebidos no componente Blog:', posts);
+  console.log('Tipo de posts:', typeof posts, Array.isArray(posts));
 
-  useEffect(() => {
-    async function fetchPosts() {
-      try {
-        const data = await getBlogPosts();
-        setPosts(data); // Atualiza o estado com os posts
-      } catch (error) {
-        console.error("Erro ao buscar posts:", error);
-      } finally {
-        setLoading(false); // Finaliza o carregamento
-      }
-    }
-    
-    fetchPosts();
-  }, []);
-
-  if (loading) {
-    return <div>Carregando posts...</div>; // Fallback de carregamento
+  if (!posts || !Array.isArray(posts)) {
+    return <div>Carregando posts...</div>; // Fallback
   }
 
   return (
@@ -53,7 +38,7 @@ function Blog() {
                 <div className="news-content">
                   <p>{post.date}</p>
                   <h4>
-                    <Link href={`/blog/${post.id}`}>{post.title}</Link>
+                    <Link href={`/blog/${post.id}`}>{post.title}</Link> {/* Usa "5", "6", e "8" */}
                   </h4>
                   <Link className="link-btn" href={`/blog/${post.id}`}>
                     Ler Mais <i className="far fa-arrow-right" />
@@ -66,6 +51,6 @@ function Blog() {
       </div>
     </section>
   );
-}
+};
 
 export default Blog;
