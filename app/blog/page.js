@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { blogPosts } from '@/components/blog/posts';
-
+import NextLayout from '@/layouts/NextLayout';
 export const metadata = {
   title: 'Blog - Nossa Empresa',
   description: 'Notícias e artigos recentes do nosso blog',
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function BlogPage() {
   return (
-    <>
+    <NextLayout header={5} footer={4} single>
       <section className="page-banner bg-cover" style={{ backgroundImage: 'url("/assets/img/banner.jpg")' }}>
         <div className="container">
           <div className="page-banner-content text-center">
@@ -53,6 +53,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-    </>
+    </NextLayout>
   );
 }

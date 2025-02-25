@@ -658,13 +658,6 @@ const Header6 = ({ single }) => {
                   <img src="/assets/img/logo/black-logo.svg" alt="logo-img" />
                 </Link>
               </div>
-              <div className="header-left">
-                <div className="mean__menu-wrapper">
-                  <div className="main-menu">
-                    <Menu single={single} menu={singleMenu} />
-                  </div>
-                </div>
-              </div>
               <div className="header-right d-flex justify-content-end align-items-center">
                 <div className="header-button">
                   <Link href="https://api.whatsapp.com/send/?phone=558431901700&text=Ol%C3%A1%21+vim+pelo+site+da+Bolt+Agency" target="_blank" rel="noopener noreferrer" className="theme-btn bg-2">

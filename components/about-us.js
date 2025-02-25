@@ -10,13 +10,7 @@ const AboutPage = () => {
   return (
     <NextLayout  header={5}   footer={4} single>
       {/* Hero Section Start */}
-      <section className="page-banner bg-cover" 
-        style={{ 
-          backgroundImage: 'url("/assets/img/banner/page-banner.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}>
+      <section className="page-banner bg-cover" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -37,11 +31,11 @@ const AboutPage = () => {
       {/* About Section Start */}
       <section className="about-section fix section-padding">
         <div className="container">
-          <div className="row g-4 align-items-center">
+          <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="about-image">
                 <Image
-                  src="/assets/img/about/about-img.jpg"
+                  src="/assets/img/about/05.jpg"
                   alt="about"
                   width={600}
                   height={400}

@@ -3,7 +3,7 @@ import NextLayout from "@/layouts/NextLayout";
 
 const Team = () => {
   return (
-    <NextLayout header={0} footer={3} single>
+    <NextLayout header={6} footer={3} single>
       <section className="team-section fix footer-bg section-padding" id="team">
         <div className="container">
           <div className="section-title text-center">
@@ -176,6 +176,15 @@ const Team = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="cta-section section-padding pt-0 footer-bg">
+        <div className="container">
+          <div className="text-center">
+            <Link href="/" className="theme-btn">
+              <i className="fas fa-home me-2"></i> Voltar para Home
+            </Link>
           </div>
         </div>
       </section>
