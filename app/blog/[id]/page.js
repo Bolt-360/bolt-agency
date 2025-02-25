@@ -1,23 +1,32 @@
 // app/blog/[id]/page.js (Server Component)
 import Link from 'next/link';
-import { getPostById, getAllPostIds } from '@/data/posts';
+import { getPostById, getAllPostIds, getBlogPosts } from '@/data/posts';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const paths = await getAllPostIds();
-  console.log('Parâmetros gerados por generateStaticParams:', paths);
+  console.log('Parâmetros gerados por generateStaticParams (documentIds):', JSON.stringify(paths, null, 2));
   return paths;
 }
 
 export default async function BlogPost({ params }) {
-  console.log('Parâmetros recebidos em BlogPost:', params);
+  console.log('Parâmetros recebidos em BlogPost (documentId):', JSON.stringify(params, null, 2));
+
+  console.log('Tentando buscar post com documentId:', params.id);
+
   const postData = await getPostById(params.id);
 
+  console.log('Resultado de getPostById para documentId', params.id, ':', JSON.stringify(postData, null, 2));
+
   if (!postData) {
+    console.error('Post não encontrado para o documentId:', params.id);
     notFound();
   }
 
+  console.log('PostData a ser renderizado:', JSON.stringify(postData, null, 2));
+
   const allPosts = await getBlogPosts();
+  console.log('Posts recentes (allPosts) para sidebar:', JSON.stringify(allPosts, null, 2));
 
   return (
     <section className="blog-details-section py-5">
