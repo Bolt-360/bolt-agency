@@ -42,6 +42,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".5s"
@@ -52,7 +53,7 @@ const Services = () => {
               </div>
               <div className="content">
                 <h3>
-                  <Link href="/servicos/social-media">Social Media Marketing</Link>
+                  <Link href="/servicos/social-media-marketing">Social Media Marketing</Link>
                 </h3>
                 <p>
                   Fortaleça sua marca e engaje seu público com posts otimizados e persuasivos,
@@ -62,6 +63,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".7s"
@@ -81,6 +83,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".3s"
@@ -99,6 +102,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".5s"
@@ -118,6 +122,7 @@ const Services = () => {
               </div>
             </div>
           </div>
+          
           <div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay=".7s"
