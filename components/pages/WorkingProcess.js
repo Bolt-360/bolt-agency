@@ -88,7 +88,7 @@ const WorkingProcess = () => {
             <div className="working-card-items">
               <div className="content">
                 <span className="sub-title">Passo 04</span>
-                <h3>Otimização: Conseguir 3x + Resultados</h3>
+                <h3>Otimização: 3x + Resultados</h3>
                 <p>
                   Otimizamos o site para garantir carregamento rápido, <br />{" "}
                   SEO e uma experiência impecável para o usuário.
