@@ -22,7 +22,8 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/imagens/3(2).png" alt="team-img" />
+                  <img src="assets/img/imagens/3(2).png" alt="team-img"
+                  style={{ borderRadius: '10px' }} />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -62,7 +63,8 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/imagens/1(4).png" alt="team-img" />
+                  <img src="assets/img/imagens/1(4).png" alt="team-img"
+                  style={{ borderRadius: '10px' }} />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -103,7 +105,8 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/imagens/2(4).png" alt="team-img" />
+                  <img src="assets/img/imagens/2(4).png" alt="team-img" 
+                  style={{ borderRadius: '10px' }}/>
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -143,7 +146,8 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/imagens/4(1).png" alt="team-img" />
+                  <img src="assets/img/imagens/4(1).png" alt="team-img" 
+                  style={{ borderRadius: '10px' }}/>
                   <div className="icon-list">
                     <ul>
                       <li>

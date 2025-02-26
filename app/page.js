@@ -198,12 +198,13 @@ const page = () => {
                   data-wow-delay=".8s"
                 >
                   <Image
-                    src="/assets/img/hero/client.png"
+                    src="/assets/img/imagens/200x50.png"
                     alt="clients"
                     width={200}
                     height={50}
                     priority
                     quality={100}
+                    style={{ borderRadius: '10px' }}
                   />
                   <p className="text-white">
                     Confiança de 1K+ empresas <br />
@@ -357,6 +358,7 @@ const page = () => {
                     width={600}
                     height={400}
                     quality={100}
+                    style={{ borderRadius: '15px' }}
                   />
                 </div>
               </div>
@@ -532,6 +534,7 @@ const page = () => {
                   width={414}
                   height={414}
                   quality={100}
+                  style={{ borderRadius: '10px' }}
                 />
                 <div className="circle-musk-shape float-bob-x">
                   <Image
@@ -540,6 +543,7 @@ const page = () => {
                     width={414}
                     height={414}
                     quality={100}
+                    style={{ borderRadius: '10px' }}
                   />
                 </div>
               </div>

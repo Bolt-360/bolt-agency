@@ -16,7 +16,9 @@ const WorkingProcess = () => {
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".3s">
             <div className="working-card-items">
               <div className="icon">
-                <img src="assets/img/imagens/1.png" alt="img" />
+                <img src="assets/img/imagens/1.png" alt="img"
+                  style={{ borderRadius: '10px' }}
+                />
               </div>
               <div className="content">
                 <span className="sub-title">Passo 01</span>
@@ -30,7 +32,8 @@ const WorkingProcess = () => {
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".5s">
             <div className="arrow-image">
-              <img src="assets/img/imagens/1(1).png" alt="img" />
+              <img src="assets/img/imagens/1(1).png" alt="img" 
+              style={{ borderRadius: '10px' }}/>
             </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
@@ -38,6 +41,7 @@ const WorkingProcess = () => {
               <img
                 src="assets/img/imagens/1(3).png"
                 alt="img"
+                style={{ borderRadius: '10px' }}
               />
             </div>
           </div>
@@ -52,14 +56,16 @@ const WorkingProcess = () => {
                 </p>
               </div>
               <div className="icon">
-                <img src="assets/img/imagens/3.png" alt="img" />
+                <img src="assets/img/imagens/3.png" alt="img"
+                style={{ borderRadius: '10px' }} />
               </div>
             </div>
           </div>
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".3s">
             <div className="working-card-items">
               <div className="icon">
-                <img src="assets/img/imagens/2.png" alt="img" />
+                <img src="assets/img/imagens/2.png" alt="img"
+                style={{ borderRadius: '10px' }} />
               </div>
               <div className="content">
                 <span className="sub-title">Passo 03</span>
@@ -73,7 +79,8 @@ const WorkingProcess = () => {
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".5s">
             <div className="arrow-image">
-              <img src="assets/img/imagens/2(1).png" alt="img" />
+              <img src="assets/img/imagens/2(1).png" alt="img" 
+              style={{ borderRadius: '10px' }}/>
             </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
@@ -81,6 +88,7 @@ const WorkingProcess = () => {
               <img
                 src="assets/img/imagens/2(3).png"
                 alt="img"
+                style={{ borderRadius: '10px' }}
               />
             </div>
           </div>
@@ -95,7 +103,8 @@ const WorkingProcess = () => {
                 </p>
               </div>
               <div className="icon">
-                <img src="assets/img/imagens/4.png" alt="img" />
+                <img src="assets/img/imagens/4.png" alt="img" 
+                style={{ borderRadius: '10px' }}/>
               </div>
             </div>
           </div>
