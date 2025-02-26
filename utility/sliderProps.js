@@ -25,106 +25,27 @@ export const sliderProps = {
       clickable: true,
     },
   },
-  testimonialSlider2: {
-    spaceBetween: 30,
-    speed: 1500,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".dot",
-      clickable: true,
-    },
-    breakpoints: {
-      1199: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 1,
-      },
-      767: {
-        slidesPerView: 1,
-      },
-      575: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  },
-  testimonialSlider3: {
-    spaceBetween: 30,
-    speed: 1500,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".dot",
-      clickable: true,
-    },
-  },
   testimonialSlider4: {
     spaceBetween: 30,
     speed: 1500,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    loop: false,
+    centeredSlides: false,
+    autoplay: false,
     breakpoints: {
       1399: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1199: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       991: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       767: {
-        slidesPerView: 2,
-      },
-      575: {
-        slidesPerView: 2,
-      },
-      0: {
         slidesPerView: 1,
       },
-    },
-  },
-  testimonialSlider5: {
-    spaceBetween: 30,
-    speed: 1500,
-    loop: true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000,
-      reverseDirection: true,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      1399: {
-        slidesPerView: 4,
-      },
-      1199: {
-        slidesPerView: 3,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-      767: {
-        slidesPerView: 2,
-      },
       575: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       0: {
         slidesPerView: 1,

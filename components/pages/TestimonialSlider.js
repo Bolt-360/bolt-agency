@@ -393,16 +393,15 @@ export const TestimonialSlider4 = () => {
           <div className="testimonial-box-items">
             <div className="testimonial-content">
               <div className="author-image">
-                <img src="assets/img/testimonial/client.png" alt="author-img" />
+                <img src="assets/img/testimonial/luana.jpeg" alt="author-img" />
                 <div className="content">
                   <h5>
-                    Louis K. Peters <span>/CEO &amp; Founder</span>
+                  Luana Silva<span>/Gerente da Associação Pensar Clube</span>
                   </h5>
                 </div>
               </div>
               <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
+              A landing page da Bolt 360 aumentou nossas inscrições em 40% e deu vida à nossa presença online. Resultados reais em semanas!
               </p>
               <div className="star">
                 <i className="fas fa-star" />
@@ -419,18 +418,17 @@ export const TestimonialSlider4 = () => {
             <div className="testimonial-content">
               <div className="author-image">
                 <img
-                  src="assets/img/testimonial/client-4.png"
+                  src="assets/img/testimonial/cida.jpeg"
                   alt="author-img"
                 />
                 <div className="content">
                   <h5>
-                    Michael B. Camara <span>/Designer</span>
+                    Cida<span>/Administradora da Strategic Data</span>
                   </h5>
                 </div>
               </div>
               <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
+              Com a LP da Bolt, dobramos os pedidos de orçamento em um mês. Simples, eficaz e profissional!
               </p>
               <div className="star">
                 <i className="fas fa-star" />
@@ -447,155 +445,17 @@ export const TestimonialSlider4 = () => {
             <div className="testimonial-content">
               <div className="author-image">
                 <img
-                  src="assets/img/testimonial/client-5.png"
+                  src="assets/img/testimonial/michael.jpeg"
                   alt="author-img"
                 />
                 <div className="content">
                   <h5>
-                    Gary D. Gallegos <span>/Business man</span>
+                    Michael<span>/Proprietário da Empresa MeHelp</span>
                   </h5>
                 </div>
               </div>
               <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
-              </p>
-              <div className="star">
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="testimonial-box-items">
-            <div className="testimonial-content">
-              <div className="author-image">
-                <img
-                  src="assets/img/testimonial/client-6.png"
-                  alt="author-img"
-                />
-                <div className="content">
-                  <h5>
-                    Steven D. Owens <span>/Manager</span>
-                  </h5>
-                </div>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
-              </p>
-              <div className="star">
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="testimonial-box-items">
-            <div className="testimonial-content">
-              <div className="author-image">
-                <img src="assets/img/testimonial/client.png" alt="author-img" />
-                <div className="content">
-                  <h5>
-                    Louis K. Peters <span>/CEO &amp; Founder</span>
-                  </h5>
-                </div>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
-              </p>
-              <div className="star">
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="testimonial-box-items">
-            <div className="testimonial-content">
-              <div className="author-image">
-                <img
-                  src="assets/img/testimonial/client-4.png"
-                  alt="author-img"
-                />
-                <div className="content">
-                  <h5>
-                    Michael B. Camara <span>/Designer</span>
-                  </h5>
-                </div>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
-              </p>
-              <div className="star">
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="testimonial-box-items">
-            <div className="testimonial-content">
-              <div className="author-image">
-                <img
-                  src="assets/img/testimonial/client-5.png"
-                  alt="author-img"
-                />
-                <div className="content">
-                  <h5>
-                    Gary D. Gallegos <span>/Business man</span>
-                  </h5>
-                </div>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
-              </p>
-              <div className="star">
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-                <i className="fas fa-star" />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <div className="testimonial-box-items">
-            <div className="testimonial-content">
-              <div className="author-image">
-                <img
-                  src="assets/img/testimonial/client-6.png"
-                  alt="author-img"
-                />
-                <div className="content">
-                  <h5>
-                    Steven D. Owens <span>/Manager</span>
-                  </h5>
-                </div>
-              </div>
-              <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem
-                accusanti doloremque laudantium, totam rem aperiame
+              A Bolt transformou nossa captação de clientes com um LP que atrai e converte. Parcerias vieram logo depois!
               </p>
               <div className="star">
                 <i className="fas fa-star" />

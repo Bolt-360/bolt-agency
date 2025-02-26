@@ -502,7 +502,6 @@ const page = () => {
         </div>
 
         <TestimonialSlider4 />
-        <TestimonialSlider5 />
       </section>
       {/* Faq Section Start */}
       <Faq />
