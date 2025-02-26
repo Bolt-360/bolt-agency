@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { blogPosts } from '@/components/pages/blog/posts';
+import NextLayout from '@/layouts/NextLayout';
 import { getBlogPosts } from '@/data/posts';
 
 export const metadata = {

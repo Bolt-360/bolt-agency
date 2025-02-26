@@ -1,4 +1,4 @@
-import Privacidade from "@/components/privacidade";
+import Privacidade from "@/components/pages/privacidade";
 
 export default function PrivacidadePage() {
   return <Privacidade />;

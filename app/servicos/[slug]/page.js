@@ -1,5 +1,5 @@
-import { services } from '@/components/services/service'
-import ServiceDetail from '@/components/services/ServiceDetail'
+import { services } from '@/components/pages/services/service'
+import ServiceDetail from '@/components/pages/services/ServiceDetail'
 import { notFound } from 'next/navigation'
 
 export async function generateStaticParams() {

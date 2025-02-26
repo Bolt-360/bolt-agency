@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import NextLayout from "@/layouts/NextLayout";
-import { TestimonialSlider4 } from "@/components/TestimonialSlider";
+import { TestimonialSlider4 } from "@/components/pages/TestimonialSlider";
 
 const AboutPage = () => {
   return (
