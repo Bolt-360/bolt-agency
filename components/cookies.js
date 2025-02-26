@@ -100,7 +100,7 @@ const CookieConsent = () => {
       {visible && (
         <div className="cookie-consent" role="alert" aria-live="polite">
           <div className="cookie-content-main">
-            <p style={{ maxWidth: '650px' }}>
+            <p>
               Nós usamos cookies para melhorar sua experiência e oferecer conteúdos relevantes.{" "}
               <span>Saiba mais em nossa </span>
               <a href="/privacidade" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#007bff' }}>
@@ -196,12 +196,12 @@ const CookieConsent = () => {
         }
 
         .cookie-content-main {
+          padding: 5px;
           margin: 0 auto;
           margin-left: 20px;
           margin-right: 20px;
-          padding: 1rem;
           display: flex;
-          justify-content: space-between;
+          justify-content: end;
           align-items: center;
           gap: 2rem;
         }
@@ -213,12 +213,13 @@ const CookieConsent = () => {
         }
 
         .btn-primary, .btn-secondary, .btn-outline {
-          padding: 0.75rem 1.5rem;
-          border-radius: 6px;
+          padding: 0.1rem 0.7rem;
+          border-radius: 8px;
           font-weight: 500;
           transition: all 0.2s;
           cursor: pointer;
           white-space: nowrap;
+          font-size: 13px;
         }
 
         .btn-primary {
@@ -257,8 +258,8 @@ const CookieConsent = () => {
         .cookie-content {
           position: relative;
           background: white;
-          width: 90%;
-          max-width: 600px;
+          width: 100%;
+          max-width: 700px;
           border-radius: 12px;
           box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }

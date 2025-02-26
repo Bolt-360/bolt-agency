@@ -1,4 +1,46 @@
 import Link from "next/link";
+import { toast } from "react-toastify";
+import { validateEmail } from "@/utility/validaEmail";
+
+const handleSubmit1 = async (e) => {
+  e.preventDefault();
+
+  const email = e.target.email.value.trim();
+
+  if (!email) {
+    toast.error('Por favor, informe seu email.');
+    return;
+  }
+
+
+  if (!validateEmail(email)) {
+    toast.error('Por favor, insira um email válido.');
+    return;
+  }
+
+  try {
+    const formData = {
+      email: e.target.email.value,
+    };
+
+    const response = await fetch('https://n8n2.bchat.lat/webhook/bolt-agency-newsletter', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      toast.success('Mensagem enviada com sucesso!');
+      e.target.reset();
+    } else {
+      toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
+    }
+  } catch (error) {
+    toast.error('Erro ao enviar mensagem. Por favor, tente novamente.');
+  }
+};
 
 const Footer = ({ footer }) => {
   switch (footer) {
@@ -493,7 +535,7 @@ const Footer3 = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Newsletter</h4>
+                <h4>Newsletter</h4>
                 </div>
                 <div className="footer-content">
                   <p>Receba noticias sobre soluções Bolt 360</p>
@@ -651,12 +693,14 @@ const Footer4 = () => {
                 </div>
                 <div className="footer-content">
                   <p>Receba noticias sobre soluções Bolt 360</p>
-                  <div className="footer-input">
-                    <input type="email" id="email" placeholder="Digite seu Email" />
-                    <button className="newsletter-btn" type="submit">
-                      <i className="far fa-arrow-right" />
-                    </button>
-                  </div>
+                  <form onSubmit={handleSubmit1}>
+                    <div className="footer-input">
+                      <input type="email" name="email" placeholder="Digite seu Email" />
+                      <button className="newsletter-btn" type="submit">
+                        <i className="far fa-arrow-right" />
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>

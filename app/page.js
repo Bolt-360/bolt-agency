@@ -85,7 +85,7 @@ const page = () => {
         serviceType: serviceType,
       };
 
-      const response = await fetch('https://n8n2.bchat.lat/webhook/landing-page', {
+      const response = await fetch('https://n8n2.bchat.lat/webhook/bolt-agency-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -571,7 +571,7 @@ const page = () => {
                 A Bolt Agency usa SEO, copywriting e automação <br /> para aumentar sua visibilidade e conversões no digital.
               </p>
               <Link
-                href="#home"
+                href="https://api.whatsapp.com/send/?phone=558431901700&text=Olá,+vim+pelo+site+da+Bolt+Agency,+quero+fazer+um+diagnóstico+gratuito" target="_blank" rel="noopener noreferrer"
                 className="theme-btn mt-4 wow fadeInUp"
                 data-wow-delay=".3s"
               >
