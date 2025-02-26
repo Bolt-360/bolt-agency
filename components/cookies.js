@@ -100,21 +100,22 @@ const CookieConsent = () => {
       {visible && (
         <div className="cookie-consent" role="alert" aria-live="polite">
           <div className="cookie-content-main">
-            <p>
+            <p style={{ maxWidth: '650px' }}>
               Nós usamos cookies para melhorar sua experiência e oferecer conteúdos relevantes.{" "}
-              <a href="/privacidade" target="_blank" rel="noopener noreferrer">
-                Saiba mais
+              <span>Saiba mais em nossa </span>
+              <a href="/privacidade" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline', color: '#007bff' }}>
+                Política de Privacidade
               </a>
             </p>
             <div className="buttons">
-              <button className="btn-secondary" onClick={() => setIsSettingsOpen(true)}>
-                Configurações
-              </button>
               <button className="btn-primary" onClick={handleAcceptAll}>
                 Aceitar Todos
               </button>
               <button className="btn-outline" onClick={handleRejectNonEssential}>
                 Recusar Não Essenciais
+              </button>
+              <button className="btn-secondary" onClick={() => setIsSettingsOpen(true)}>
+                Configurações
               </button>
             </div>
           </div>
@@ -192,27 +193,23 @@ const CookieConsent = () => {
           background-color: white;
           box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
           z-index: 1000;
-          display: flex;
-          justify-content: center;
         }
 
         .cookie-content-main {
-          max-width: 1200px;
-          width: 100%;
+          margin: 0 auto;
+          margin-left: 20px;
+          margin-right: 20px;
           padding: 1rem;
           display: flex;
-          align-items: center;
           justify-content: space-between;
-        }
-
-        .cookie-content-main p {
-          max-width: 400px;
+          align-items: center;
+          gap: 2rem;
         }
 
         .buttons {
           display: flex;
-          gap: 0.75rem;
-          margin-left: auto;
+          gap: 1rem;
+          flex-shrink: 0;
         }
 
         .btn-primary, .btn-secondary, .btn-outline {
@@ -221,6 +218,7 @@ const CookieConsent = () => {
           font-weight: 500;
           transition: all 0.2s;
           cursor: pointer;
+          white-space: nowrap;
         }
 
         .btn-primary {
@@ -368,7 +366,8 @@ const CookieConsent = () => {
         @media (max-width: 768px) {
           .cookie-content-main {
             flex-direction: column;
-            text-align: center;
+            align-items: stretch;
+            max-height: none;
           }
           
           .buttons {
@@ -378,6 +377,7 @@ const CookieConsent = () => {
           
           .btn-primary, .btn-secondary, .btn-outline {
             width: 100%;
+            white-space: normal;
           }
         }
       `}</style>
