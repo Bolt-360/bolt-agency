@@ -442,7 +442,7 @@ const Header1 = ({ single, menu }) => {
                 <Link href="/">
                   <img
                     src="assets/img/logo/white-logo.svg"
-                    alt="logo-img"
+                    alt="logo"
                     className="logo-1"
                   />
                 </Link>
@@ -561,13 +561,13 @@ const Header3 = ({ single }) => {
   ];
   return (
     <Fragment>
-      <header id="header-sticky" className="header-2">
+      <header id="header-sticky" className="header-3">
         <div className="container-fluid">
           <div className="mega-menu-wrapper">
             <div className="header-main">
               <div className="sticky-logo">
                 <Link href="/">
-                  <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                  <img src="/assets/img/logo/black-logo.svg" alt="logo" className="logo-2" />
                 </Link>
               </div>
               <div className="header-left">

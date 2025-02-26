@@ -6,19 +6,21 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 function Blog() {
-  const [posts, setPosts] = useState([]); // Estado para armazenar os posts
-  const [loading, setLoading] = useState(true); // Estado de carregamento
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchPosts() {
       try {
         const data = await getBlogPosts();
-        console.log('Posts fetched in useEffect:', data); // Log para debug dos posts recebidos
-        setPosts(data); // Atualiza o estado com os posts
+        console.log('Posts carregados no componente:', data);
+        setPosts(data);
       } catch (error) {
         console.error("Erro ao buscar posts:", error);
+        setError(error.message);
       } finally {
-        setLoading(false); // Finaliza o carregamento
+        setLoading(false);
       }
     }
     
@@ -26,11 +28,15 @@ function Blog() {
   }, []);
 
   if (loading) {
-    return <div>Carregando posts...</div>; // Fallback de carregamento
+    return <div>Carregando posts...</div>;
   }
 
-  if (!posts || !Array.isArray(posts)) {
-    return <div>Erro: Posts não carregados corretamente</div>; // Fallback adicional
+  if (error) {
+    return <div>Erro ao carregar posts: {error}</div>;
+  }
+
+  if (!posts || !Array.isArray(posts) || posts.length === 0) {
+    return <div>Nenhum post encontrado</div>;
   }
 
   return (
@@ -60,9 +66,9 @@ function Blog() {
                 <div className="news-content">
                   <p>{post.date}</p>
                   <h4>
-                    <Link href={`/blog/${post.id}`}>{post.title}</Link> {/* Usa documentId: "xb8snqplafcrnnzw4vudq4jo", etc. */}
+                    <Link href={`/blog/${post.documentId || post.id}`}>{post.title}</Link>
                   </h4>
-                  <Link className="link-btn" href={`/blog/${post.id}`}>
+                  <Link className="link-btn" href={`/blog/${post.documentId || post.id}`}>
                     Ler Mais <i className="far fa-arrow-right" />
                   </Link>
                 </div>

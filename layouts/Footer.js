@@ -30,12 +30,12 @@ const Footer1 = () => {
         <div className="discussed-items">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+              <img src="http://localhost:3000/assets/img/logo/white-logo.svg" alt="logo-img" />
             </Link>
           </div>
           <div className="discussed-content wow fadeInUp" data-wow-delay=".5s">
             <h2>
-              Let’s Discussed About <span>Your Projects</span>
+              Let's Discussed About <span>Your Projects</span>
             </h2>
             <Link href="contact" className="theme-btn hover-white">
               Get Started <i className="far fa-arrow-right" />
@@ -236,7 +236,7 @@ const Footer2 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="http://localhost:3000/assets/img/logo/black-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -416,7 +416,7 @@ const Footer3 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="http://localhost:3000/assets/img/logo/black-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -559,13 +559,10 @@ const Footer3 = () => {
 
 const Footer4 = () => {
   return (
-    <footer className="footer-section footer-bg fix">
-      <div className="color-shape">
-        <img src="assets/img/footer-color-shape.png" alt="shape-img" />
-      </div>
-      <div className="color-shape-2">
-        <img src="assets/img/footer-color-shape-2.png" alt="shape-img" />
-      </div>
+    <footer className="footer-section footer-bg">
+      {/* Remover ou comentar as linhas com shape-img */}
+      {/* <img src="/assets/img/shape/shape-img.png" alt="shape-img" className="shape-img" /> */}
+      
       <div className="container">
         <div className="footer-widgets-wrapper">
           <div className="row">
@@ -576,7 +573,7 @@ const Footer4 = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link href="/">
-                    <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                    <img src="http://localhost:3000/assets/img/logo/black-logo.svg" alt="logo-img" />
                   </Link>
                 </div>
                 <div className="footer-content">
@@ -729,12 +726,12 @@ const Footer6 = () => {
         <div className="discussed-items">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <Link href="/">
-              <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+              <img src="http://localhost:3000/assets/img/logo/black-logo.svg" alt="logo-img" />
             </Link>
           </div>
           <div className="discussed-content wow fadeInUp" data-wow-delay=".5s">
             <h2>
-              Let’s Discussed About <span>Your Projects</span>
+              Let's Discussed About <span>Your Projects</span>
             </h2>
             <Link href="contact" className="theme-btn hover-white">
               Get Started <i className="far fa-arrow-right" />
