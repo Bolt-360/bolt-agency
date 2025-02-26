@@ -192,21 +192,27 @@ const CookieConsent = () => {
           background-color: white;
           box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
           z-index: 1000;
+          display: flex;
+          justify-content: center;
         }
 
         .cookie-content-main {
           max-width: 1200px;
-          margin: 0 auto;
-          padding: 1.5rem;
+          width: 100%;
+          padding: 1rem;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 2rem;
+        }
+
+        .cookie-content-main p {
+          max-width: 400px;
         }
 
         .buttons {
           display: flex;
           gap: 0.75rem;
+          margin-left: auto;
         }
 
         .btn-primary, .btn-secondary, .btn-outline {
