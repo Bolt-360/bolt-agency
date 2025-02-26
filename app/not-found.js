@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import Breadcrumb from "@/components/pages/Breadcrumb";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 const page = () => {

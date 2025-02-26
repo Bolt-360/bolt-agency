@@ -1,11 +1,11 @@
-import Pricing from "@/components/bakPricing";
-import Faq from "@/components/Faq";
-import Services from "@/components/services/Services";
+import Pricing from "@/components/pages/bakPricing";
+import Faq from "@/components/pages/Faq";
+import Services from "@/components/pages/services/Services";
 import {
   TestimonialSlider4,
   TestimonialSlider5,
-} from "@/components/TestimonialSlider";
-import WorkingProcess from "@/components/WorkingProcess";
+} from "@/components/pages/TestimonialSlider";
+import WorkingProcess from "@/components/pages/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 const page = () => {

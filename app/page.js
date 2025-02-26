@@ -7,19 +7,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Image from 'next/image';
 
-import Faq from "@/components/Faq";
-import Pricing from "@/components/Pricing";
-import Services from "@/components/services/Services";
-import { TestimonialSlider4, TestimonialSlider5 } from "@/components/TestimonialSlider";
-import WorkingProcess from "@/components/WorkingProcess";
+import Faq from "@/components/pages/Faq";
+import Pricing from "@/components/pages/Pricing";
+import Services from "@/components/pages/services/Services";
+import { TestimonialSlider4, TestimonialSlider5 } from "@/components/pages/TestimonialSlider";
+import WorkingProcess from "@/components/pages/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
-import Blog from '@/components/blog/Blog';
+import Blog from '@/components/pages/blog/Blog';
 import { validateCnpj } from '@/utility/validaCNPJ.js';
 import { validateEmail } from '@/utility/validaEmail.js';
 import { validatePhone } from '@/utility/validaTelefone.js';
 import { validateURL } from '@/utility/validaURL.js';
-
+import CookieConsent from '@/components/cookies';
 
 const page = () => {
   const [isOpen, setOpen] = useState(false);
@@ -579,6 +579,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      <CookieConsent />
     </NextLayout>
   );
 };

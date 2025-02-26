@@ -1,8 +1,8 @@
 // /app/blog/[id]/page.js
 
 import Link from 'next/link';
-import { blogPosts } from '@/components/blog/posts';
-import { getPostById } from '@/components/blog/posts';
+import { blogPosts } from '@/components/pages/blog/posts';
+import { getPostById } from '@/components/pages/blog/posts';
 import { notFound } from 'next/navigation';
 
 export default function BlogPost({ params }) {

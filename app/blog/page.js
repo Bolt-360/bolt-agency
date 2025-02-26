@@ -1,7 +1,7 @@
 // /app/blog/page.js
 
 import Link from 'next/link';
-import { blogPosts } from '@/components/blog/posts';
+import { blogPosts } from '@/components/pages/blog/posts';
 import NextLayout from '@/layouts/NextLayout';
 export const metadata = {
   title: 'Blog - Nossa Empresa',
