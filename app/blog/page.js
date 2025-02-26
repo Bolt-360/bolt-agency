@@ -8,15 +8,9 @@ export const metadata = {
   description: 'Notícias e artigos recentes do nosso blog',
 };
 
-export async function getStaticProps() {
+export default async function BlogPage() {
   const posts = await getBlogPosts();
-  return {
-    props: { posts },
-    revalidate: 60, // Revalida a cada 60 segundos (ISR)
-  };
-}
 
-export default function BlogPage({ posts }) {
   return (
     <>
       <section className="page-banner bg-cover" style={{ backgroundImage: 'url("/assets/img/banner.jpg")' }}>
