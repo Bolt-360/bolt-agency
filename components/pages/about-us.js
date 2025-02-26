@@ -35,7 +35,7 @@ const AboutPage = () => {
             <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="about-image">
                 <Image
-                  src="/assets/img/about/05.jpg"
+                  src="/assets/img/imagens/sobre-nos.png"
                   alt="about"
                   width={600}
                   height={400}

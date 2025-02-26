@@ -22,7 +22,7 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/team/06.jpg" alt="team-img" />
+                  <img src="assets/img/imagens/3(2).png" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -50,9 +50,9 @@ const Team = () => {
                 </div>
                 <div className="team-content">
                   <h4>
-                    <Link href="team-details">Érico César</Link>
+                    <Link href="team-details">Vitor Maximo</Link>
                   </h4>
-                  <p>CEO &amp; Founder</p>
+                  <p>Desenvolvedor</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/team/07.jpg" alt="team-img" />
+                  <img src="assets/img/imagens/1(4).png" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -92,7 +92,8 @@ const Team = () => {
                   <h4>
                     <Link href="team-details">Luana </Link>
                   </h4>
-                  <p>Business Consultant</p>
+                  <p>Chefe de BPO
+                  </p>
                 </div>
               </div>
             </div>
@@ -102,7 +103,7 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/team/08.jpg" alt="team-img" />
+                  <img src="assets/img/imagens/2(4).png" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -132,7 +133,7 @@ const Team = () => {
                   <h4>
                     <Link href="team-details">Lucas Zerino</Link>
                   </h4>
-                  <p>Senior Manager</p>
+                  <p>Tech Leader</p>
                 </div>
               </div>
             </div>
@@ -142,7 +143,7 @@ const Team = () => {
             >
               <div className="team-card-items">
                 <div className="team-image">
-                  <img src="assets/img/team/09.jpg" alt="team-img" />
+                  <img src="assets/img/imagens/4(1).png" alt="team-img" />
                   <div className="icon-list">
                     <ul>
                       <li>
@@ -170,9 +171,9 @@ const Team = () => {
                 </div>
                 <div className="team-content">
                   <h4>
-                    <Link href="team-details">Duane V. McCormick</Link>
+                    <Link href="team-details">Matheus Freitas</Link>
                   </h4>
-                  <p>Junior Consultant</p>
+                  <p>Estagiário </p>
                 </div>
               </div>
             </div>

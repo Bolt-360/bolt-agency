@@ -352,7 +352,7 @@ const page = () => {
               <div className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                 <div className="digital-about-image">
                   <Image
-                    src="/assets/img/about/digittal-about-img.png"
+                    src="/assets/img/imagens/600x400.png"
                     alt="about"
                     width={600}
                     height={400}
@@ -527,18 +527,18 @@ const page = () => {
             <div className="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
               <div className="contact-image">
                 <Image
-                  src="/assets/img/contact.jpg"
+                  src="/assets/img/imagens/SEO.png"
                   alt="img"
-                  width={600}
-                  height={400}
+                  width={414}
+                  height={414}
                   quality={100}
                 />
                 <div className="circle-musk-shape float-bob-x">
                   <Image
-                    src="/assets/img/hero/circle-musk.png"
+                    src="/assets/img/imagens/Tech.png"
                     alt="shape-img"
-                    width={600}
-                    height={400}
+                    width={414}
+                    height={414}
                     quality={100}
                   />
                 </div>
