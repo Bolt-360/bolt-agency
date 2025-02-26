@@ -14,7 +14,7 @@ function Blog() {
     async function fetchPosts() {
       try {
         const data = await getBlogPosts();
-        console.log('Posts carregados no componente:', data);
+        console.log("Posts carregados no componente:", data);
         setPosts(data);
       } catch (error) {
         console.error("Erro ao buscar posts:", error);
@@ -23,20 +23,12 @@ function Blog() {
         setLoading(false);
       }
     }
-    
+
     fetchPosts();
   }, []);
 
-  if (loading) {
-    return <div>Carregando posts...</div>;
-  }
-
-  if (error) {
-    return <div>Erro ao carregar posts: {error}</div>;
-  }
-
-  if (!posts || !Array.isArray(posts) || posts.length === 0) {
-    return <div>Nenhum post encontrado</div>;
+  if (loading || error || !posts.length) {
+    return null;
   }
 
   return (
@@ -66,9 +58,14 @@ function Blog() {
                 <div className="news-content">
                   <p>{post.date}</p>
                   <h4>
-                    <Link href={`/blog/${post.documentId || post.id}`}>{post.title}</Link>
+                    <Link href={`/blog/${post.documentId || post.id}`}>
+                      {post.title}
+                    </Link>
                   </h4>
-                  <Link className="link-btn" href={`/blog/${post.documentId || post.id}`}>
+                  <Link
+                    className="link-btn"
+                    href={`/blog/${post.documentId || post.id}`}
+                  >
                     Ler Mais <i className="far fa-arrow-right" />
                   </Link>
                 </div>
