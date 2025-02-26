@@ -3,7 +3,7 @@ import NextLayout from "@/layouts/NextLayout";
 
 const Team = () => {
   return (
-    <NextLayout header={6} footer={3} single>
+    <NextLayout header={5} footer={3} single>
       <section className="team-section fix footer-bg section-padding" id="team">
         <div className="container">
           <div className="section-title text-center">
@@ -12,7 +12,7 @@ const Team = () => {
               Time Bolt Agency
             </span>
             <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-              Conheça nosso profissionais
+              Conheça nossos profissionais
             </h2>
           </div>
           <div className="row">
@@ -51,7 +51,7 @@ const Team = () => {
                 </div>
                 <div className="team-content">
                   <h4>
-                    <Link href="team-details">Vitor Maximo</Link>
+                    <Link href="team-details">Victor Maximo</Link>
                   </h4>
                   <p>Desenvolvedor</p>
                 </div>
