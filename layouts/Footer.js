@@ -665,7 +665,7 @@ const Footer4 = () => {
                 <Link href="#faq">FAQs</Link>
               </li>
               <li>
-                <Link href="about">Quem Somos</Link>
+                <Link href="about-us">Quem Somos</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
