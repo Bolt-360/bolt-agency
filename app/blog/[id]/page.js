@@ -32,7 +32,7 @@ export default async function BlogPost({ params }) {
 
   return (
     <>
-      <header id="header-sticky" className="header-3">
+      <header id="header-sticky" className="header-6">
         <div className="container-fluid">
           <div className="mega-menu-wrapper">
             <div className="header-main d-flex justify-content-between align-items-center">
