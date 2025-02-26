@@ -2574,7 +2574,7 @@ input.main-search-input::placeholder {
 .hero-1 .hero-contact-box .contact-form-item .form-clt input {
   width: 100%;
   border-radius: 16px;
-  border: 1px solid rgba(36, 37, 73, 0.1);
+  border: 1px solid rgba(36, 37, 73, 0.61);
   background-color: var(--white);
   padding: 18px 30px;
   color: var(--text);
@@ -2606,6 +2606,38 @@ input.main-search-input::placeholder {
   color: var(--theme);
   text-decoration-line: underline;
 }
+
+.terms-and-conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; 
+}
+
+.terms-and-conditions input{  
+  gap: 10px;
+  border-radius: 0 !important;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--theme);
+  background-color: transparent;
+  outline: none;
+  color: var(--text);
+
+}
+
+.terms-and-conditions p a{  
+  color: var(--theme);
+  text-decoration-line: underline;
+}
+
+.terms-and-conditions input:checked {
+  background-color: #fff; /* Define a cor do fundo quando marcado */
+  border-color: var(--theme); /* Altera a cor da borda */
+}
+
 
 .hero-2 {
   position: relative;

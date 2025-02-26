@@ -15,6 +15,11 @@ import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 import Blog from '@/components/blog/Blog';
+import { validateCnpj } from '@/utility/validaCNPJ.js';
+import { validateEmail } from '@/utility/validaEmail.js';
+import { validatePhone } from '@/utility/validaTelefone.js';
+import { validateURL } from '@/utility/validaURL.js';
+
 
 const page = () => {
   const [isOpen, setOpen] = useState(false);
@@ -23,31 +28,39 @@ const page = () => {
   const [isNome, setIsNome] = useState(false);
   const [isEmail, setIsEmail] = useState(false);
   const [isPhone, setIsPhone] = useState(false);
-
-  const validateEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  };
-
-  const validatePhone = (phone) => {
-    // Accepts formats like: (84)99999-9999 or 84999999999
-    const regex = /^(?:\(?([0-9]{2})\)?[-. ]?)?([0-9]{5})[-. ]?([0-9]{4})$/;
-    return regex.test(phone.replace(/\D/g, ''));
-  };
+  const [isCnpj, setIsCnpj] = useState(false);
+  const [serviceType, setServiceType] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    const email = e.target.email.value;
-    const phone = e.target.phone.value;
-    
+
+    const cnpj = e.target.cnpj.value.trim();
+    const email = e.target.email.value.trim();
+    const phone = e.target.phone.value.trim();
+    const site = e.target.site.value.trim();
+
+    if (!cnpj || !email || !phone || !site) {
+      toast.error('Por favor, preencha todos os campos obrigatórios.');
+      return;
+    }
+
+    if (!validateCnpj(cnpj)) {
+      toast.error('Por favor, insira um CNPJ válido.');
+      return;
+    }
+
+    if (!validateURL(site)) {
+      toast.error('Por favor, insira uma URL válida para o site.');
+      return;
+    }
+
+    if (!serviceType) {
+      toast.error('Por favor, selecione um tipo de serviço.');
+      return;
+    }
+
     if (!isAccepted) {
       toast.error('Por favor, aceite os termos e condições para continuar.');
-      return;
-    } 
-    
-    if (!isNome || !isEmail || !isPhone) {
-      toast.error('Por favor, preencha todos os campos para continuar.');
       return;
     }
 
@@ -65,12 +78,14 @@ const page = () => {
 
     try {
       const formData = {
-        name: e.target.name.value,
         email: e.target.email.value,
         phone: e.target.phone.value,
+        cnpj: e.target.cnpj.value,
+        site: e.target.site.value,
+        serviceType: serviceType,
       };
 
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://n8n2.bchat.lat/webhook/landing-page', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -99,6 +114,8 @@ const page = () => {
     setIsNome(false);
     setIsEmail(false);
     setIsPhone(false);
+    setIsCnpj(false);
+    setServiceType('');
 
     return () => {
       setOpen(false);
@@ -107,12 +124,14 @@ const page = () => {
       setIsNome(false);
       setIsEmail(false);
       setIsPhone(false);
+      setIsCnpj(false);
+      setServiceType('');
     };
-  }, []); 
+  }, []);
 
   return (
     <NextLayout header={1} footer={4} single>
-      <ToastContainer 
+      <ToastContainer
         position="top-right"
         autoClose={3000}
         hideProgressBar={true}
@@ -132,7 +151,7 @@ const page = () => {
       {/* Hero Section Start */}
       <section
         className="hero-section hero-1 bg-cover fix"
-        style={{ 
+        style={{
           backgroundImage: 'url("/assets/img/hero/01.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -207,9 +226,20 @@ const page = () => {
                       <div className="form-clt">
                         <input
                           type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Seu Nome"
+                          name="cnpj"
+                          id="cnpj"
+                          placeholder="CNPJ"
+                          onChange={(e) => setIsCnpj(e.target.value.trim() !== '')}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="form-clt">
+                        <input
+                          type="text"
+                          name="site"
+                          id="site"
+                          placeholder="Site da empresa"
                           onChange={(e) => setIsNome(e.target.value.trim() !== '')}
                         />
                       </div>
@@ -231,13 +261,58 @@ const page = () => {
                           type="text"
                           name="phone"
                           id="phone"
-                          placeholder="Telefone"
+                          placeholder="Nº de WhatsApp"
                           onChange={(e) => setIsPhone(e.target.value.trim() !== '')}
                         />
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <div className="payment-save">
+                      <p style={{ fontWeight: 'bold' }}>Falar comigo por:</p>
+                        <div className="service-type-options d-flex justify-content-between">
+                          
+                          <div className="form-check">
+                            <input
+                              type="radio"
+                              className="form-check-input"
+                              name="serviceType"
+                              id="marketing"
+                              checked={serviceType === 'WhatsApp'}
+                              onChange={() => setServiceType('WhatsApp')}
+                            />
+                            <label className="form-check-label" htmlFor="WhatsApp">
+                              WhatsApp
+                            </label>
+                          </div>
+                          <div className="form-check">
+                            <input
+                              type="radio"
+                              className="form-check-input"
+                              name="serviceType"
+                              id="consultoria"
+                              checked={serviceType === 'E-mail'}
+                              onChange={() => setServiceType('E-mail')}
+                            />
+                            <label className="form-check-label" htmlFor="E-mail">
+                              E-mail
+                            </label>
+                          </div>
+                          <div className="form-check">
+                            <input
+                              type="radio"
+                              className="form-check-input"
+                              name="serviceType"
+                              id="desenvolvimento"
+                              checked={serviceType === 'Ligação'}
+                              onChange={() => setServiceType('Ligação')}
+                            />
+                            <label className="form-check-label" htmlFor="Ligação">
+                              Ligação
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-12">
+                      <div className="terms-and-conditions gap-2">
                         <input
                           type="checkbox"
                           className="form-check-input"
@@ -253,11 +328,11 @@ const page = () => {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                      <button 
-                        type="submit" 
+                      <button
+                        type="submit"
                         className={`theme-btn`}
                       >
-                        {isSubmitting ? 'Enviando...' : 'Agende Agora'} 
+                        {isSubmitting ? 'Enviando...' : 'Agende Agora'}
                         <i className="far fa-arrow-right" />
                       </button>
                     </div>
@@ -452,7 +527,7 @@ const page = () => {
             <div className="col-lg-1" />
             <div className="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
               <div className="contact-image">
-                  <Image
+                <Image
                   src="/assets/img/contact.jpg"
                   alt="img"
                   width={600}

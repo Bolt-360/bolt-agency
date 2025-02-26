@@ -21,8 +21,7 @@ const Terms = () => {
                   Termos e Condições
                 </span>
                 <h1 className="wow fadeInUp" data-wow-delay=".2s">
-                  Termos de Uso e <br />
-                  Política de Privacidade
+                  Termos e Condições
                 </h1>
               </div>
             </div>
@@ -36,40 +35,42 @@ const Terms = () => {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="terms-content">
-                <h3 className="mb-4">1. Aceitação dos Termos</h3>
+                <h3 className="mb-4">Bem-vindo ao Bolt 360</h3>
                 <p>
-                  Ao acessar e utilizar os serviços da Bolt Agency, você concorda com estes termos e condições. 
-                  Estes termos constituem um acordo legal entre você e a Bolt Agency.
+                  Nós da Bolt 360 somos uma empresa dedicada a transformar negócios, reduzir custos, analisar riscos e aumentar o lucro dos nossos clientes. Estes Termos e Condições ("Termos") regem o uso de nossa landing page (https://bolt-agency-pi.vercel.app/) e dos serviços oferecidos por meio dela. Ao acessar ou utilizar nosso LP, você concorda com estes Termos. Caso não concorde, pedimos que não utilize o site.
                 </p>
 
-                <h3 className="mb-4 mt-5">2. Uso do Serviço</h3>
+                <h3 className="mb-4 mt-5">1. Objetivo da Landing Page</h3>
                 <p>
-                  Nossos serviços de marketing digital são fornecidos mediante acordo prévio e podem incluir:
+                Nossa LP tem como objetivo principal captar informações de potenciais clientes específicos em nossos serviços de assessoria empresarial, incluindo a criação de sites. Atualmente, oferecemos um formulário para cadastro. No futuro, poderemos disponibilizar materiais gratuitos (como e-books) e diagnósticos gratuitos de sites, conforme descrito abaixo
                 </p>
+
+                <h3 className="mb-4 mt-5">2. Uso do Formulário</h3>
                 <ul className="about-list style-2 mt-3">
                   <li>
-                    <i className="fas fa-check-circle" />
-                    Consultoria em Marketing Digital
+                    <i className="fas fa-circle" />
+                    Cadastro : Ao preencher o formulário, você fornece dados como nome da empresa, site, telefone, e-mail e número de colaboradores. Esses dados serão usados ​​para entrar em contato com você e oferecer nossos serviços, conforme detalhado em nossa Política de Privacidade
                   </li>
                   <li>
                     <i className="fas fa-check-circle" />
-                    Serviços de SEO e Otimização
+                    Elegibilidade : O formulário é destinado a maiores de 18 anos ou representantes legais de empresas. Não coletamos intencionalmente dados de menores.
+
                   </li>
                   <li>
                     <i className="fas fa-check-circle" />
-                    Gestão de Mídias Sociais
+                    Veracidade : Você é responsável por fornecer informações corretas e atualizadas. Não nos responsabilizamos por dados incorretos ou incompletos
                   </li>
                 </ul>
 
                 <h3 className="mb-4 mt-5">3. Privacidade e Proteção de Dados</h3>
                 <p>
-                  Respeitamos sua privacidade e protegemos seus dados pessoais de acordo com a LGPD. 
+                  Respeitamos sua privacidade e protegemos seus dados pessoais de acordo com a LGPD.
                   Suas informações serão utilizadas apenas para os fins específicos dos serviços contratados.
                 </p>
 
                 <h3 className="mb-4 mt-5">4. Responsabilidades</h3>
                 <p>
-                  A Bolt Agency se compromete a fornecer serviços de qualidade, mantendo a transparência 
+                  A Bolt Agency se compromete a fornecer serviços de qualidade, mantendo a transparência
                   e profissionalismo em todas as interações com os clientes.
                 </p>
               </div>
