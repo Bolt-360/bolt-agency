@@ -195,6 +195,9 @@ const Footer1 = () => {
                 <li>
                   <Link href="about">Quem Somos</Link>
                 </li>
+                <li>
+                  <Link href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link>
+                </li>
               </ul>
               <a
                 href="#"
@@ -516,6 +519,9 @@ const Footer3 = () => {
               <li>
                 <Link href="about">Quem Somos</Link>
               </li>
+              <li>
+                <Link href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link>
+              </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
               <i className="far fa-angle-double-up" />
@@ -666,6 +672,9 @@ const Footer4 = () => {
               </li>
               <li>
                 <Link href="about-us">Quem Somos</Link>
+              </li>
+              <li>
+                <Link href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link>
               </li>
             </ul>
             <a href="#" id="scrollUp" className="scroll-icon">
@@ -858,6 +867,9 @@ const Footer6 = () => {
                 </li>
                 <li>
                   <Link href="about">Quem Somos</Link>
+                </li>
+                <li>
+                  <Link href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade</Link>
                 </li>
               </ul>
               <a
