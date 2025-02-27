@@ -5,6 +5,28 @@ import { getPostById, getAllPostIds, getBlogPosts } from '@/data/posts';
 import { notFound } from 'next/navigation';
 import Footer from '@/layouts/Footer';
 
+function formatContent(content) {
+  if (!content) return [];
+  
+  // Divide o conteúdo em parágrafos usando quebras de linha duplas
+  return content.split('\n\n').map((paragraph, index) => {
+    // Verifica se é um título (começa com números e ponto)
+    if (/^\d+\./.test(paragraph.trim())) {
+      return (
+        <h3 key={index} className="mt-4 mb-3">
+          {paragraph.trim()}
+        </h3>
+      );
+    }
+    
+    // Caso contrário, renderiza como parágrafo
+    return (
+      <p key={index} className="mb-3">
+        {paragraph.trim()}
+      </p>
+    );
+  });
+}
 
 export default async function BlogPost({ params }) {
   console.log('Parâmetros recebidos em BlogPost (documentId):', JSON.stringify(params, null, 2));
@@ -80,13 +102,11 @@ export default async function BlogPost({ params }) {
                   </div>
 
                   {/* Conteúdo */}
-                  <h1 className="card-title h2">{postData.title}</h1>
-                  {/* Renderiza o conteúdo como múltiplos parágrafos com espaçamento */}
-                  {postData.content.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="card-text blog-paragraph">
-                      {paragraph.trim()}
-                    </p>
-                  ))}
+                  <h1 className="card-title h2 mb-4">{postData.title}</h1>
+                  
+                  <div className="blog-content">
+                    {formatContent(postData.content)}
+                  </div>
 
                   {/* Botão de Voltar */}
                   <div className="mt-4 d-flex gap-3">
