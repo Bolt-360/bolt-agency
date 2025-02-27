@@ -1,15 +1,10 @@
-// app/blog/[id]/page.js (Server Component, apenas o conteúdo ajustado)
+"use client"
 
 import Link from 'next/link';
 import { getPostById, getAllPostIds, getBlogPosts } from '@/data/posts';
 import { notFound } from 'next/navigation';
 import Footer from '@/layouts/Footer';
 
-export async function generateStaticParams() {
-  const paths = await getAllPostIds();
-  console.log('Parâmetros gerados por generateStaticParams (documentIds):', JSON.stringify(paths, null, 2));
-  return paths;
-}
 
 export default async function BlogPost({ params }) {
   console.log('Parâmetros recebidos em BlogPost (documentId):', JSON.stringify(params, null, 2));
