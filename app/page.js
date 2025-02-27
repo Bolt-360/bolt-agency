@@ -14,7 +14,6 @@ import WorkingProcess from "@/components/WorkingProcess";
 import NextLayout from "@/layouts/NextLayout";
 import Link from "next/link";
 import Blog from '@/components/blog/Blog';
-import { getBlogPosts } from './api/posts';
 
 const Page = () => {
   
