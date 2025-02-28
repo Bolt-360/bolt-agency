@@ -31,19 +31,8 @@ const WorkingProcess = () => {
             </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".5s">
-            <div className="arrow-image">
-              <img src="assets/img/imagens/1(1).png" alt="img" 
-              style={{ borderRadius: '10px' }}/>
-            </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
-            <div className="arrow-image text-center">
-              <img
-                src="assets/img/imagens/1(3).png"
-                alt="img"
-                style={{ borderRadius: '10px' }}
-              />
-            </div>
           </div>
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".5s">
             <div className="working-card-items">
@@ -78,19 +67,8 @@ const WorkingProcess = () => {
             </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".5s">
-            <div className="arrow-image">
-              <img src="assets/img/imagens/2(1).png" alt="img" 
-              style={{ borderRadius: '10px' }}/>
-            </div>
           </div>
           <div className="col-lg-3 wow fadeInUp" data-wow-delay=".3s">
-            <div className="arrow-image text-center">
-              <img
-                src="assets/img/imagens/2(3).png"
-                alt="img"
-                style={{ borderRadius: '10px' }}
-              />
-            </div>
           </div>
           <div className="col-lg-8 wow fadeInUp" data-wow-delay=".5s">
             <div className="working-card-items">
